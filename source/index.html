@@ -2,11 +2,197 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+    <title>HTML Academy:Pink</title>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <a class="logo" href="#">
+        <img class="logo__img" src="https://via.placeholder.com/150x150" alt="логотип Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+             <a href="">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Приложение Pink</h1>
+      <section class="download">
+        <h2 class="visually-hidden">Загрузка Приложения</h2>
+        <div class="download__bottom">
+          <button class="download-button">Скачать приложение</button>
+          <ul class="download-os">
+            <li class="os__item">
+              <img src="https://via.placeholder.com/150x150" alt="apple">
+            </li>
+            <li class="os__item">
+              <img src="https://via.placeholder.com/150x150" alt="android">
+            </li>
+            <li class="os__item">
+              <img src="https://via.placeholder.com/150x150" alt="windows">
+            </li>
+          </ul>
+          <p class="download-text">
+            Доступно для iPhone, iPad, Android,
+            Windows Phone ,OS X, Windows 8
+          </p>
+        </div>
+      </section>
+      <div class="information">
+        <p class="information__text">Устали от серости мегаполиса?</p>
+        <p class="information__text">Нам есть,что вам предложить!</p>
+        <ul class="information-list">
+          <li class="information-list__item">
+            <h3>Поднимает настроение</h3>
+            <p>
+              Приложение позволит вам победить
+              осеннюю хандру и депрессию
+              буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="information-list__item">
+            <h3>Меняет мир вокруг</h3>
+            <p>
+              Сделайте снимок и украсьте его
+              смайликом или текстовой подписью,
+              чтобы усилить эффект
+            </p>
+          </li>
+          <li class="informationn-list__item">
+            <h3>Заводит новых друзей</h3>
+            <p>
+              Ставьте лайки, комментируйте,
+              делитесь фотографиями с друзьями и
+              заводите новых
+            </p>
+          </li>
+        </ul>
+        <img class="information__image" src="https://via.placeholder.com/150x150" alt="Всем привет">
+      </div>
+      <section class="recall">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <span class="recall__user-name">
+          Николай Петров
+        </span>
+        <p>
+          «Это приложение перевернуло мой мир
+          и позволило по-новому взглянуть на
+          привычные серые вещи! А еще я
+          познакомился со своей будущей женой
+          в комментариях к выложенной
+          фотографии!»
+        </p>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="price__slider">
+
+          <input type="radio" id="btn-1" name="toggle">
+          <input type="radio" id="btn-2" name="toggle" checked>
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider__controls">
+            <label for="btn-1">переключатель</label>
+            <label for="btn-2">переключатель</label>
+            <label for="btn-3">переключатель</label>
+          </div>
+
+          <ul class="price-list">
+            <li class="price-list__item">
+              <div class="item-top">
+                <span class="item-top__head">База</span>
+                <span class="item-top__price">1,99 usd</span>
+              </div>
+              <ul class="options-list">
+                <li class="options-list__item">Розовый фильтр
+                  <img class="options-list__mark mark--green" src="https://via.placeholder.com/150x150" alt="зеленая галочка">
+                </li>
+                <li class="options-list__item">Смайлики
+                  <img class="options-list__mark mark--red" src="https://via.placeholder.com/150x150" alt="красная галочка">
+                </li>
+                <li class="options-list__item">Комментарии
+                  <img class="options-list__mark mark--red" src="https://via.placeholder.com/150x150" alt="красная галочка">
+                </li>
+              </ul>
+            </li>
+
+            <li class="price-list__item">
+              <div class="item-top">
+                <span class="hit">хит</span>
+                <span class="item-top__head">Стандарт</span>
+                <span class="item-top__price">3,99 usd</span>
+              </div>
+              <ul class="options-list">
+                <li class="options-list__item">Розовый фильтр
+                  <img class="options-list__mark mark--green" src="https://via.placeholder.com/150x150" alt="зеленая галочка">
+                </li>
+                <li class="options-list__item">Смайлики
+                  <img class="options-list__mark mark--green" src="https://via.placeholder.com/150x150" alt="зеленая галочка">
+                </li>
+                <li class="options-list__item">Комментарии
+                  <img class="options-list__mark mark--green" src="https://via.placeholder.com/150x150" alt="красная галочка">
+                </li>
+              </ul>
+            </li>
+
+            <li class="price-list__item">
+              <div class="item-top">
+                <span class="item-top__head">Анлим</span>
+                <span class="item-top__price">9,99 usd</span>
+              </div>
+              <ul class="options-list">
+                <li class="options-list__item">Розовый фильтр
+                  <img class="options-list__mark mark--green" src="https://via.placeholder.com/150x150" alt="зеленая галочка">
+                </li>
+                <li class="options-list__item">Смайлики
+                  <img class="options-list__mark mark--green" src="https://via.placeholder.com/150x150" alt="зеленая галочка">
+                </li>
+                <li class="options-list__item">Комментарии
+                  <img class="options-list__mark mark--green" src="https://via.placeholder.com/150x150" alt="зеленая галочка">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts-map">
+          <p class="contacts-block">
+            Остались вопросы?
+            Свяжитесь с нами!
+          </p>
+          <p class="contacts-block">
+            <span class="contacts__text">Звоните:</span>
+            +7 (812) 555-66-66
+          </p>
+          <p class="contacts-block">
+            <span class="contacts__text">Пишите:</span>
+            mail@htmlacademy.ru
+          </p>
+          <p class="contacts-block">
+            <span class="contacts__text">Приезжайте в гости:</span>
+            ул. Большая Конюшенная, 19/8
+          </p>
+          <div class="map__pin">Указатель на карте</div>
+        </div>
+      </section>
+    </main>
 
   </body>
 </html>

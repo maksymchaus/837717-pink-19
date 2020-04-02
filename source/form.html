@@ -7,42 +7,36 @@
   </head>
 
   <body>
-    <header class="main-header">
-      <a class="logo" href="#">
-        <img class="logo-img" src="https://via.placeholder.com/150x150" alt="логотип Pink">
-      </a>
+    <header class="page-header">
+      <h1 class="page-header__head">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <nav class="main-nav">
+        <a class="logo" href="index.html">
+          <img class="logo-image" src="https://via.placeholder.com/150x150" alt="логотип Pink">
+        </a>
         <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="">Фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-             <a href="">Конкурс</a>
+             <a>Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-container">
-      <h1 class="visually-hidden">Заполни нашу форму</h1>
-      <section class="contest">
-        <h2 class="contest__head">Конкурс на самое безбашенное путешествие с Пинк</h2>
-        <div class="contest__bottom">
-          <p class="contest__text">
-            Поделитесь своей историей и получите
-            шанс выиграть ценный приз — 1000
-            миль на вашу бонусную карту!
-          </p>
-        </div>
-      </section>
-
+    <main class="page-main">
+      <p class="contest-text">
+        Поделитесь своей историей и получите
+        шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!
+      </p>
       <form action="https://echo.htmlacademy.ru">
         <fieldset class="name">
           <ul class="name-list">
@@ -134,24 +128,26 @@
       </form>
     </main>
 
-    <footer class="main-footer">
+    <footer class="page-footer">
       <a class="footer-logo" href="#">
         <img src="https://via.placeholder.com/150x150" alt="логотип">
       </a>
       <ul class="social-list">
-        <li class="social-list__item">
-          <a class="item__twiter" href="#"></a>
+        <li class="social-list__link">
+          <a class="social-list__link--twiter" href="#"></a>
         </li>
-        <li class="social-list__item">
-          <a class="item__fb" href="#"></a>
+        <li class="social-list__link">
+          <a class="social-list__link--fb" href="#"></a>
         </li>
-        <li class="social-list__item">
-          <a class="item__youtube" href="#"></a>
+        <li class="social-list__link">
+          <a class="social-list__link--youtube" href="#"></a>
         </li>
       </ul>
       <div class="footer-develop">
         <span>Разработано</span>
-        <img src="https://via.placeholder.com/150x150" alt="логотип htmlacademy">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="https://via.placeholder.com/150x150" alt="логотип htmlacademy">
+        </a>
       </div>
     </footer>
   </body>

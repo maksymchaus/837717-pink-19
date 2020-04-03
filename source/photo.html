@@ -8,7 +8,6 @@
 
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Фотографии пользоватилей</h1>
       <nav class="main-nav">
         <a class="logo" href="index.html">
           <img class="logo-image" src="https://via.placeholder.com/150x150" alt="логотип Pink">
@@ -29,6 +28,7 @@
           </li>
         </ul>
       </nav>
+      <h1 class="page-head">Фотографии пользоватилей</h1>
     </header>
 
     <main class="page-main">
@@ -49,7 +49,7 @@
             прямую трансляцию в перископе,
             задавайте свои вопросы!
           </p>
-          <button class="like-button">
+          <button class="like-button" type="button">
             <img src="https://via.placeholder.com/150x150" alt="лайк">
           </button>
           <span class="userphotos-list__comment-like">нравиться:215</span>
@@ -62,7 +62,7 @@
             Вчера он на луну летал, сегодня
             в руки к нам попал.
           </p>
-          <button class="like-button">
+          <button class="like-button" type="button">
             <img src="https://via.placeholder.com/150x150" alt="лайк">
           </button>
           <span class="userphotos-list__comment-like">Нравится: 356</span>
@@ -74,7 +74,7 @@
             <span class="userphotos-list__comment-time">(12 часов назад)</span>
             Соседи будут рады!
           </p>
-          <button class="like-button">
+          <button class="like-button" type="button">
             <img src="https://via.placeholder.com/150x150" alt="лайк">
           </button>
           <span class="userphotos-list__comment-like">Нравится: 666</span>
@@ -87,7 +87,7 @@
             Здесь могла быть ваша цитата о
             высоком и вечном.
           </p>
-          <button class="like-button">
+          <button class="like-button" type="button">
             <img src="https://via.placeholder.com/150x150" alt="лайк">
           </button>
           <span class="userphotos-list__comment-like">Нравится: 215</span>
@@ -99,7 +99,7 @@
             <span class="userphotos-list__comment-time">(25 часов назад)</span>
             Самая кубанская в мире!
           </p>
-          <button class="like-button">
+          <button class="like-button" type="button">
             <img src="https://via.placeholder.com/150x150" alt="лайк">
           </button>
           <span class="userphotos-list__comment-like">Нравится: 4</span>
@@ -111,7 +111,7 @@
             <span class="userphotos-list__comment-time">(40 часов назад)</span>
             Где снег-то?
           </p>
-          <button class="like-button">
+          <button class="like-button" type="button">
             <img src="https://via.placeholder.com/150x150" alt="лайк">
           </button>
           <span class="userphotos-list__comment-like">Нравится: 150</span>
@@ -123,7 +123,7 @@
             <span class="userphotos-list__comment-time">(45 часов назад)</span>
             Всем GM и взаимные лайки!
           </p>
-          <button class="like-button">
+          <button class="like-button" type="button">
             <img src="https://via.placeholder.com/150x150" alt="лайк">
           </button>
           <span class="userphotos-list__comment-like">Нравится: 2560</span>
@@ -137,18 +137,26 @@
       </p>
 
       <div class="sharing">
-        <img src="https://via.placeholder.com/150x150" alt="фото">
-        <div class="sharing-tools">
-          <ul class="sharing-tools__list">
-            <li class="sharing-tools__item sharing-tools--item-cut"></li>
-            <li class="sharing-tools__item sharing-tools--item-fill"></li>
-            <li class="sharing-tools__item sharing-tools--item-bright"></li>
-          </ul>
-          <div class="sharing-range">
-            <div class="sharing-range__scale"></div>
-            <div class="sharing-range__toggle"></div>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <img src="https://via.placeholder.com/150x150" alt="фото">
+          <div class="sharing-tools">
+            <ul class="sharing-tools__list">
+              <li class="sharing-tools__item sharing-tools__item--cut">
+                <button type="button"></button>
+              </li>
+              <li class="sharing-tools__item sharing-tools__item--fill">
+                <button type="button"></button>
+              </li>
+              <li class="sharing-tools__item sharing-tools__item--bright">
+                <button type="button"></button>
+              </li>
+            </ul>
+            <div class="sharing-range">
+              <div class="sharing-range__scale"></div>
+              <div class="sharing-range__toggle"></div>
+            </div>
           </div>
-        </div>
+        </form>
         <div class="crossline"></div>
         <div class="button-wrap">
           <button class="sharing-button" type="submit">Запостить</button>
@@ -162,14 +170,14 @@
         <img src="https://via.placeholder.com/150x150" alt="логотип">
       </a>
       <ul class="social-list">
-        <li class="social-list__link">
-          <a class="social-list__link--twiter" href="#"></a>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twiter" href="#"></a>
         </li>
-        <li class="social-list__link">
-          <a class="social-list__link--fb" href="#"></a>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--fb" href="#"></a>
         </li>
-        <li class="social-list__link">
-          <a class="social-list__link--youtube" href="#"></a>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="#"></a>
         </li>
       </ul>
       <div class="footer-develop">

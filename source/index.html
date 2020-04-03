@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="logo" href="#">
+        <a class="logo">
           <img class="logo-image" src="https://via.placeholder.com/150x150" alt="логотип Pink">
         </a>
         <button class="main-nav__toggle" type="button"></button>
@@ -104,9 +104,9 @@
           фотографии!»
         </p>
         <div class="slider-control">
-          <button class="slider-control__toggle"></button>
-          <button class="slider-control__toggle"></button>
-          <button class="slider-control__toggle"></button>
+          <button class="slider-control__toggle" type="button"></button>
+          <button class="slider-control__toggle" type="button"></button>
+          <button class="slider-control__toggle" type="button"></button>
         </div>
       </section>
 
@@ -115,11 +115,34 @@
         <div class="price-slider">
 
           <table class="price-table">
-            <caption class="price-table__header">
-              <span class="price-table__header-head">База</span>
-              <span class="price-table__header-price">1,99 usd</span>
-            </caption>
             <tr class="price-table__row">
+              <th class="price-table__header">
+                <span class="price-table__header-head">База</span>
+                <span class="price-table__header-price">1,99 usd</span>
+              </th>
+              <th class="price-table__header">
+                <span class="hit">хит</span>
+                <span class="price-table__header-head">Стандарт</span>
+                <span class="price-table__header-price">3,99 usd</span>
+              </th>
+              <th class="price-table__header">
+                <span class="price-table__header-head">Анлим</span>
+                <span class="price-table__header-price">9,99 usd</span>
+              </th>
+            </tr>
+            <tr class="price-table__row">
+              <td>
+                <span class="price-table__row-item">Розовый фильтр</span>
+              </td>
+              <td>
+                <span class="price-table__row-mark"></span>
+              </td>
+              <td>
+                <span class="price-table__row-item">Розовый фильтр</span>
+              </td>
+              <td>
+                <span class="price-table__row-mark"></span>
+              </td>
               <td>
                 <span class="price-table__row-item">Розовый фильтр</span>
               </td>
@@ -134,32 +157,12 @@
               <td>
                 <span class="price-table__row-cross"></span>
               </td>
-            </tr>
-            <tr class="price-table__row">
               <td>
-                <span class="price-table__row-item">Комментарии</span>
-              </td>
-              <td>
-                <span class="price-table__row-cross"></span>
-              </td>
-            </tr>
-          </table>
-
-          <table class="price-table">
-            <caption class="price-table__header">
-              <span class="hit">хит</span>
-              <span class="price-table__header-head">Стандарт</span>
-              <span class="price-table__header-price">3,99 usd</span>
-            </caption>
-            <tr class="price-table__row">
-              <td>
-                <span class="price-table__row-item">Розовый фильтр</span>
+                <span class="price-table__row-item">Смайлики</span>
               </td>
               <td>
                 <span class="price-table__row-mark"></span>
               </td>
-            </tr>
-            <tr class="price-table__row">
               <td>
                 <span class="price-table__row-item">Смайлики</span>
               </td>
@@ -174,31 +177,12 @@
               <td>
                 <span class="price-table__row-cross"></span>
               </td>
-            </tr>
-          </table>
-
-          <table class="price-table">
-            <caption class="price-table__header">
-              <span class="price-table__header-head">Анлим</span>
-              <span class="price-table__header-price">9,99 usd</span>
-            </caption>
-            <tr class="price-table__row">
               <td>
-                <span class="price-table__row-item">Розовый фильтр</span>
+                <span class="price-table__row-item">Комментарии</span>
               </td>
               <td>
-                <span class="price-table__row-mark"></span>
+                <span class="price-table__row-cross"></span>
               </td>
-            </tr>
-            <tr class="price-table__row">
-              <td>
-                <span class="price-table__row-item">Смайлики</span>
-              </td>
-              <td>
-                <span class="price-table__row-mark"></span>
-              </td>
-            </tr>
-            <tr class="price-table__row">
               <td>
                 <span class="price-table__row-item">Комментарии</span>
               </td>
@@ -207,11 +191,10 @@
               </td>
             </tr>
           </table>
-
           <div class="slider-control">
-            <button class="slider-control__toggle"></button>
-            <button class="slider-control__toggle"></button>
-            <button class="slider-control__toggle"></button>
+            <button class="slider-control__toggle" type="button"></button>
+            <button class="slider-control__toggle" type="button"></button>
+            <button class="slider-control__toggle" type="button"></button>
           </div>
 
         </div>
@@ -236,7 +219,7 @@
             <span class="contacts__text">Приезжайте в гости:</span>
             ул. Большая Конюшенная, 19/8
           </p>
-          <div class=contacts-map__pin">Указатель на карте</div>
+          <div class="contacts-map__pin">Указатель на карте</div>
         </div>
       </section>
     </main>

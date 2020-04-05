@@ -2,11 +2,227 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+    <title>HTML Academy:Pink</title>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="logo">
+          <img class="logo-image" src="https://via.placeholder.com/150x150" alt="логотип Pink">
+        </a>
+        <button class="main-nav__toggle" type="button"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+             <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="visually-hidden">Приложение Pink</h1>
+      <section class="download">
+        <h2 class="visually-hidden">Загрузка Приложения</h2>
+        <div class="download__bottom">
+          <a href="https://www.apple.com" class="download-button">Скачать приложение</a>
+          <ul class="download-os">
+            <li class="download-os__item">
+              <a href="https://www.apple.com">
+                <img src="https://via.placeholder.com/150x150" alt="apple">
+              </a>
+            </li>
+            <li class="download-os__item">
+              <a href="https://play.google.com">
+                <img src="https://via.placeholder.com/150x150" alt="android">
+              </a>
+            </li>
+            <li class="download-os__item">
+              <a href="https://www.microsoft.com">
+                <img src="https://via.placeholder.com/150x150" alt="windows">
+              </a>
+            </li>
+          </ul>
+          <p class="download__text">
+            Доступно для iPhone, iPad, Android,
+            Windows Phone ,OS X, Windows 8
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <main class="page-main">
+      <div class="information">
+        <p class="information__text">Устали от серости мегаполиса?</p>
+        <p class="information__text">Нам есть,что вам предложить!</p>
+        <ul class="information-list">
+          <li class="information-list__item">
+            <h3>Поднимает настроение</h3>
+            <p>
+              Приложение позволит вам победить
+              осеннюю хандру и депрессию
+              буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="information-list__item">
+            <h3>Меняет мир вокруг</h3>
+            <p>
+              Сделайте снимок и украсьте его
+              смайликом или текстовой подписью,
+              чтобы усилить эффект
+            </p>
+          </li>
+          <li class="information-list__item">
+            <h3>Заводит новых друзей</h3>
+            <p>
+              Ставьте лайки, комментируйте,
+              делитесь фотографиями с друзьями и
+              заводите новых
+            </p>
+          </li>
+        </ul>
+        <img class="information__image" src="https://via.placeholder.com/150x150" alt="Всем привет">
+      </div>
+      <section class="recall">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <span class="recall__user-name">
+          Николай Петров
+        </span>
+        <p>
+          «Это приложение перевернуло мой мир
+          и позволило по-новому взглянуть на
+          привычные серые вещи! А еще я
+          познакомился со своей будущей женой
+          в комментариях к выложенной
+          фотографии!»
+        </p>
+        <div class="slider-control">
+          <button class="slider-control__toggle" type="button"></button>
+          <button class="slider-control__toggle" type="button"></button>
+          <button class="slider-control__toggle" type="button"></button>
+        </div>
+      </section>
+
+      <section class="price">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="price-slider">
+
+          <table class="price-table">
+            <tr class="price-table__row">
+              <th class="price-table__header">
+                <span class="price-table__header-head">База</span>
+                <span class="price-table__header-price">1,99 usd</span>
+              </th>
+              <th class="price-table__header">
+                <span class="hit">хит</span>
+                <span class="price-table__header-head">Стандарт</span>
+                <span class="price-table__header-price">3,99 usd</span>
+              </th>
+              <th class="price-table__header">
+                <span class="price-table__header-head">Анлим</span>
+                <span class="price-table__header-price">9,99 usd</span>
+              </th>
+            </tr>
+            <tr class="price-table__row">
+              <td>
+                <span class="price-table__row-item">Розовый фильтр</span>
+              </td>
+              <td>
+                <span class="price-table__row-mark"></span>
+              </td>
+              <td>
+                <span class="price-table__row-item">Розовый фильтр</span>
+              </td>
+              <td>
+                <span class="price-table__row-mark"></span>
+              </td>
+              <td>
+                <span class="price-table__row-item">Розовый фильтр</span>
+              </td>
+              <td>
+                <span class="price-table__row-mark"></span>
+              </td>
+            </tr>
+            <tr class="price-table__row">
+              <td>
+                <span class="price-table__row-item">Смайлики</span>
+              </td>
+              <td>
+                <span class="price-table__row-cross"></span>
+              </td>
+              <td>
+                <span class="price-table__row-item">Смайлики</span>
+              </td>
+              <td>
+                <span class="price-table__row-mark"></span>
+              </td>
+              <td>
+                <span class="price-table__row-item">Смайлики</span>
+              </td>
+              <td>
+                <span class="price-table__row-mark"></span>
+              </td>
+            </tr>
+            <tr class="price-table__row">
+              <td>
+                <span class="price-table__row-item">Комментарии</span>
+              </td>
+              <td>
+                <span class="price-table__row-cross"></span>
+              </td>
+              <td>
+                <span class="price-table__row-item">Комментарии</span>
+              </td>
+              <td>
+                <span class="price-table__row-cross"></span>
+              </td>
+              <td>
+                <span class="price-table__row-item">Комментарии</span>
+              </td>
+              <td>
+                <span class="price-table__row-mark"></span>
+              </td>
+            </tr>
+          </table>
+          <div class="slider-control">
+            <button class="slider-control__toggle" type="button"></button>
+            <button class="slider-control__toggle" type="button"></button>
+            <button class="slider-control__toggle" type="button"></button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts-map">
+          <p class="contacts-block">
+            Остались вопросы?
+            Свяжитесь с нами!
+          </p>
+          <p class="contacts-block">
+            <span class="contacts__text">Звоните:</span>
+            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts-block">
+            <span class="contacts__text">Пишите:</span>
+           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts-block">
+            <span class="contacts__text">Приезжайте в гости:</span>
+            ул. Большая Конюшенная, 19/8
+          </p>
+          <div class="contacts-map__pin">Указатель на карте</div>
+        </div>
+      </section>
+    </main>
 
   </body>
 </html>

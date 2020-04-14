@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: local('Open Sans'),
+	     url('../fonts/opensans.woff') format('woff'),
+       url('../fonts/opensans.woff2') format('woff2'),
+       url('../fonts/opensansbold.woff') format('woff'),
+       url('../fonts/opensansbold.woff2') format('woff2'),
+       url('../fonts/opensanslight.woff') format('woff'),
+       url('../fonts/opensanslight.woff2') format('woff2');
+}
+
+@import "blocks/variables.less";
+@import "blocks/mixins.less";
+@import "blocks/indents.less";
+@import "blocks/header/main-nav.less";
+@import "blocks/header/download.less";
+@import "blocks/header/page-header.less";
+@import "blocks/main/information.less";
+@import "blocks/main/page-main.less";
+@import "blocks/main/userphotos-list.less";
+@import "blocks/footer/page-footer.less";
+@import "blocks/footer/social-list.less";
+
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  font-family: @font-family;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
+

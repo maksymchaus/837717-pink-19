@@ -3,25 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy:Pink</title>
-
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="logo">
-          <img class="logo-image" src="https://via.placeholder.com/150x150" alt="логотип Pink">
-        </a>
-        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__top">
+          <a class="logo">
+            <img class="logo-image" src="img/logo-pink-white-mobile.svg" alt="логотип Pink">
+          </a>
+          <button class="main-nav__toggle" type="button"></button>
+        </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-             <a href="form.html">Конкурс</a>
+            <a href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -31,22 +33,20 @@
       <h1 class="visually-hidden">Приложение Pink</h1>
       <section class="download">
         <h2 class="visually-hidden">Загрузка Приложения</h2>
+        <div class="download__top"></div>
         <div class="download__bottom">
-          <a href="https://www.apple.com" class="download-button">Скачать приложение</a>
+          <a class="download-button" href="https://www.apple.com">Скачать приложение</a>
           <ul class="download-os">
-            <li class="download-os__item">
+            <li class="download-os__item download-os__item--apple">
               <a href="https://www.apple.com">
-                <img src="https://via.placeholder.com/150x150" alt="apple">
               </a>
             </li>
-            <li class="download-os__item">
+            <li class="download-os__item download-os__item--android">
               <a href="https://play.google.com">
-                <img src="https://via.placeholder.com/150x150" alt="android">
               </a>
             </li>
-            <li class="download-os__item">
+            <li class="download-os__item download-os__item--microsoft">
               <a href="https://www.microsoft.com">
-                <img src="https://via.placeholder.com/150x150" alt="windows">
               </a>
             </li>
           </ul>
@@ -60,35 +60,39 @@
 
     <main class="page-main">
       <div class="information">
-        <p class="information__text">Устали от серости мегаполиса?</p>
-        <p class="information__text">Нам есть,что вам предложить!</p>
-        <ul class="information-list">
-          <li class="information-list__item">
-            <h3>Поднимает настроение</h3>
-            <p>
-              Приложение позволит вам победить
-              осеннюю хандру и депрессию
-              буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="information-list__item">
-            <h3>Меняет мир вокруг</h3>
-            <p>
-              Сделайте снимок и украсьте его
-              смайликом или текстовой подписью,
-              чтобы усилить эффект
-            </p>
-          </li>
-          <li class="information-list__item">
-            <h3>Заводит новых друзей</h3>
-            <p>
-              Ставьте лайки, комментируйте,
-              делитесь фотографиями с друзьями и
-              заводите новых
-            </p>
-          </li>
-        </ul>
-        <img class="information__image" src="https://via.placeholder.com/150x150" alt="Всем привет">
+        <div class="information__text-wrap">
+          <p class="information__text">Устали от серости мегаполиса?</p>
+          <p class="information__text">Нам есть,что вам предложить!</p>
+        </div>
+        <div class="information__list-wrap">
+          <ul class="information-list">
+            <li class="information-list__item">
+              <h3>Поднимает настроение</h3>
+              <p>
+                Приложение позволит вам победить
+                осеннюю хандру и депрессию
+                буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="information-list__item">
+              <h3>Меняет мир вокруг</h3>
+              <p>
+                Сделайте снимок и украсьте его
+                смайликом или текстовой подписью,
+                чтобы усилить эффект
+              </p>
+            </li>
+            <li class="information-list__item">
+              <h3>Заводит новых друзей</h3>
+              <p>
+                Ставьте лайки, комментируйте,
+                делитесь фотографиями с друзьями и
+                заводите новых
+              </p>
+            </li>
+          </ul>
+          <div class="information__bg-image"></div>
+        </div>
       </div>
       <section class="recall">
         <h2 class="visually-hidden">Отзывы</h2>
@@ -213,7 +217,7 @@
           </p>
           <p class="contacts-block">
             <span class="contacts__text">Пишите:</span>
-           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="contacts-block">
             <span class="contacts__text">Приезжайте в гости:</span>

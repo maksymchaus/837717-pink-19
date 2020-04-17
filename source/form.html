@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy:Pink</title>
-
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="logo" href="index.html">
-          <img class="logo__image" src="https://via.placeholder.com/150x150" alt="логотип Pink">
-        </a>
-        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__top">
+          <a class="logo" href="index.html">
+            <img class="logo-image" src="img/logo-pink-white-mobile.svg" alt="логотип Pink">
+          </a>
+          <button class="main-nav__toggle" type="button"></button>
+        </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
@@ -20,15 +22,18 @@
           <li class="site-list__item">
             <a href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item">
-             <a>Конкурс</a>
+          <li class="site-list__item site-list__item--active">
+            <a>Конкурс</a>
           </li>
           <li class="site-list__item">
             <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
-      <h1 class="page-head">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-head">
+        <h1>Конкурс на самое
+        <br>безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
 
     <main class="page-main">
@@ -37,7 +42,7 @@
         шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
       </p>
-      <form action="https://echo.htmlacademy.ru">
+      <form class="contest-form" action="https://echo.htmlacademy.ru">
         <fieldset class="name">
           <ul class="name-list">
             <li class="name-list__item">
@@ -129,8 +134,8 @@
     </main>
 
     <footer class="page-footer">
-      <a class="footer-logo" href="#">
-        <img src="https://via.placeholder.com/150x150" alt="логотип">
+      <a class="footer-logo" href="index.html">
+        <img src="img/logo-pink-blue-mobile.svg" alt="логотип">
       </a>
       <ul class="social-list">
         <li class="social-list__item">
@@ -146,7 +151,7 @@
       <div class="footer-develop">
         <span>Разработано</span>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/150x150" alt="логотип htmlacademy">
+          <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
         </a>
       </div>
     </footer>

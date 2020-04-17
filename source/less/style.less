@@ -1,61 +1,38 @@
-@font-face {
-	font-family: 'Open Sans';
-	src: local 'Open Sans',
-	    url('../fonts/opensans.woff') format('woff'),
-      url('../fonts/opensans.woff2') format('woff2'),
-      url('../fonts/opensansbold.woff') format('woff'),
-      url('../fonts/opensansbold.woff2') format('woff2'),
-      url('../fonts/opensanslight.woff') format('woff'),
-      url('../fonts/opensanslight.woff2') format('woff2');
-}
+@import "../less/mixins.less";
+@import "../less/variables.less";
+@import "../less/fonts.less";
+@import "../less/global.less";
 
-@import "blocks/variables.less";
-@import "blocks/mixins.less";
-@import "blocks/indents.less";
 @import "blocks/header/main-nav.less";
 @import "blocks/header/download.less";
+@import "blocks/header/download-os.less";
+@import "blocks/header/download-button.less";
 @import "blocks/header/page-header.less";
+@import "blocks/header/site-list.less";
+@import "blocks/header/page-head.less";
+
 @import "blocks/main/information.less";
+@import "blocks/main/information-list.less";
 @import "blocks/main/page-main.less";
+@import "blocks/main/intro-text.less";
+@import "blocks/main/photo-text.less";
+@import "blocks/main/contest-text.less";
 @import "blocks/main/userphotos-list.less";
+@import "blocks/main/like-button.less";
+@import "blocks/main/panorama.less";
+@import "blocks/main/form-sharing/sharing.less";
+@import "blocks/main/form-sharing/crossline.less";
+@import "blocks/main/form-sharing/sharing-list.less";
+@import "blocks/main/form-sharing/sharing-range.less";
+@import "blocks/main/form-sharing/sharing-button.less";
+@import "blocks/main/contest-form/name.less";
+@import "blocks/main/contest-form/name-list.less";
+@import "blocks/main/contest-form/achievement.less";
+@import "blocks/main/contest-form/device.less";
+@import "blocks/main/contest-form/user-comment.less";
+@import "blocks/main/contest-form/user-contact.less";
+
 @import "blocks/footer/page-footer.less";
 @import "blocks/footer/social-list.less";
-
-
-*, *::after, *::before {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0 auto;
-  padding: 0;
-  width: 320px;
-  font-family: @font-family;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-}
+@import "blocks/footer/footer-logo.less";
+@import "blocks/footer/footer-develop.less";

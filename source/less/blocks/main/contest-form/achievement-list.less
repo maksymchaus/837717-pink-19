@@ -1,0 +1,50 @@
+.achievement-list {
+  margin: 0;
+  padding: 0;
+}
+
+.achievement-list__item {
+  padding: 23px 20px;
+  list-style: none;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @bg-header;
+
+  input[type="checkbox"]:checked + label,
+  input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 70px;
+    line-height: 35px;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked + label:before,
+  input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 37px;
+    height: 37px;
+    border: 2.0px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon-yes.svg) 50% 50% no-repeat;
+  }
+
+  input[type="checkbox"]:not(:checked) + label:after {
+    background: none;
+  }
+}

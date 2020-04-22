@@ -67,27 +67,27 @@
           </legend>
           <ul class="achievement-list">
             <li class="achievement-list__item">
-              <input type="checkbox" name="achievement" value="selfie" id="achievement-selfie" checked>
+              <input class="visually-hidden" type="checkbox" name="achievement" value="selfie" id="achievement-selfie" checked>
               <label for="achievement-selfie">Сделал селфи с акулой</label>
             </li>
             <li class="achievement-list__item">
-              <input type="checkbox" name="achievement" value="baked" id="achievement-baked" checked>
+              <input class="visually-hidden" type="checkbox" name="achievement" value="baked" id="achievement-baked" checked>
               <label for="achievement-baked">Обгорел на пляже</label>
             </li>
             <li class="achievement-list__item">
-              <input type="checkbox" name="achievement" value="ChuckNorris" id="achievement-ChuckNorris">
+              <input class="visually-hidden" type="checkbox" name="achievement" value="ChuckNorris" id="achievement-ChuckNorris">
               <label for="achievement-ChuckNorris">Видел Чака Норриса</label>
             </li>
             <li class="achievement-list__item">
-              <input type="checkbox" name="achievement" value="souvenir" id="achievement-souvenir">
+              <input class="visually-hidden" type="checkbox" name="achievement" value="souvenir" id="achievement-souvenir">
               <label for="achievement-souvenir">Накупил сувениров</label>
             </li>
             <li class="achievement-list__item">
-              <input type="checkbox" name="achievement" value="keeptower" id="achievement-keeptower" checked>
+              <input class="visually-hidden" type="checkbox" name="achievement" value="keeptower" id="achievement-keeptower" checked>
               <label for="achievement-keeptower">Удержал башню</label>
             </li>
             <li class="achievement-list__item">
-              <input type="checkbox" name="achievement" value="crashhotel" id="achievement-crashhotel">
+              <input class="visually-hidden" type="checkbox" name="achievement" value="crashhotel" id="achievement-crashhotel">
               <label for="achievement-crashhotel">Разгромил отель</label>
             </li>
           </ul>
@@ -107,29 +107,31 @@
         </fieldset>
 
         <fieldset class="device">
-          <legend>С каким приложением путешествовали?</legend>
+          <legend class="device__legend">С каким приложением путешествовали?</legend>
           <ul class="device-list">
             <li class="device-list__item">
+              <input class="visually-hidden" type="radio" id="device-ios" name="device" value="iOS" checked>
               <label for="device-ios">Pink для iOS</label>
-              <input type="radio" id="device-ios" name="device" value="iOS" checked>
             </li>
             <li class="device-list__item">
+              <input class="visually-hidden" type="radio" id="device-android" name="device" value="Android">
               <label for="device-android">Pink на Android</label>
-              <input type="radio" id="device-android" name="device" value="Android">
             </li>
             <li class="device-list__item">
+              <input class="visually-hidden" type="radio" id="device-windows" name="device" value="Windows">
               <label for="device-windows">Windows Phone</label>
-              <input type="radio" id="device-windows" name="device" value="Windows">
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="user-comment">
           <label for="user-comment">Опишите свои эмоции</label>
-          <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea name="user-comment" id="user-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="button-form" type="submit">Отправить форму</button>
-        <span class="required-field">* — обязательные поля</span>
+        <div class="button-form">
+          <button type="submit">Отправить форму</button>
+          <span class="required-field">* — обязательные поля</span>
+        </div>
       </form>
     </main>
 

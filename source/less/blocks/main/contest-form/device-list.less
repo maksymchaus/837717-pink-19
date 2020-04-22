@@ -1,0 +1,53 @@
+.device-list {
+  margin: 0;
+  padding: 0;
+}
+
+.device-list__item {
+  padding: 20px;
+  list-style: none;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @bg-header;
+
+  input[type="radio"]:checked + label,
+  input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 70px;
+    line-height: 35px;
+    cursor: pointer;
+  }
+
+  input[type="radio"]:checked + label:before,
+  input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 37px;
+    height: 37px;
+    border: 2.0px solid #e5e5e5;
+    background-color: #ffffff;
+    border-radius: 100%;
+  }
+
+  input[type="radio"]:checked + label:after,
+  input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    width: 15px;
+    height: 15px;
+    background-color: @red;
+    border-radius: 100%;
+    opacity: 1;
+  }
+
+  input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+  }
+}

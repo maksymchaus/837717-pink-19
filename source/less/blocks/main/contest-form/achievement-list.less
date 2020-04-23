@@ -1,0 +1,50 @@
+.achievement-list {
+  margin: 0;
+  padding: 0;
+}
+
+.achievement-list__item {
+  padding: 23px 20px;
+  list-style: none;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @bg-header;
+}
+
+.achievement__checkbox:checked + .achievement__label,
+.achievement__checkbox:not(:checked) + .achievement__label {
+  display: inline-block;
+  position: relative;
+  padding-left: 70px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.achievement__checkbox:checked + .achievement__label::before,
+.achievement__checkbox:not(:checked) + .achievement__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.achievement__checkbox:checked + .achievement__label::after,
+.achievement__checkbox:not(:checked) + .achievement__label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-yes.svg") 50% 50% no-repeat;
+}
+
+.achievement__checkbox:not(:checked) + .achievement__label::after {
+  background: none;
+}

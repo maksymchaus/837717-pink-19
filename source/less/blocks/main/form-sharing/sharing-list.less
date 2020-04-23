@@ -1,6 +1,7 @@
 .sharing-list {
   max-width: 240px;
   margin: 0 auto;
+  padding: 0;
   padding-bottom: 40px;
 
   display: flex;
@@ -12,6 +13,7 @@
 .sharing-list__item {
   width: 50px;
   height: 50px;
+  list-style: none;
 
   & button {
     width: 50px;
@@ -24,23 +26,27 @@
     &:hover {
       opacity: 0.6;
     }
+
     &:active,
     &:focus {
       opacity: 1;
     }
   }
+
   &--cut button {
-    background-image: url(../../../img/icon-editor-crop.svg);
+    background-image: url("../img/icon-editor-crop.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
   &--fill button {
-    background-image: url(../../../img/icon-editor-fill.svg);
+    background-image: url("../img/icon-editor-fill.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
   &--bright button {
-    background-image: url(../../../img/icon-editor-contrast.svg);
+    background-image: url("../img/icon-editor-contrast.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }

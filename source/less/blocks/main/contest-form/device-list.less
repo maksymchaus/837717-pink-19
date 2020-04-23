@@ -11,43 +11,43 @@
   line-height: 30px;
   font-weight: 400;
   color: @bg-header;
+}
 
-  input[type="radio"]:checked + label,
-  input[type="radio"]:not(:checked) + label {
-    display: inline-block;
-    position: relative;
-    padding-left: 70px;
-    line-height: 35px;
-    cursor: pointer;
-  }
+.device__radio:checked + .device__label,
+.device__radio:not(:checked) + .device__label {
+  display: inline-block;
+  position: relative;
+  padding-left: 70px;
+  line-height: 35px;
+  cursor: pointer;
+}
 
-  input[type="radio"]:checked + label:before,
-  input[type="radio"]:not(:checked) + label:before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 37px;
-    height: 37px;
-    border: 2.0px solid #e5e5e5;
-    background-color: #ffffff;
-    border-radius: 100%;
-  }
+.device__radio:checked + .device__label::before,
+.device__radio:not(:checked) + .device__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
 
-  input[type="radio"]:checked + label:after,
-  input[type="radio"]:not(:checked) + label:after {
-    content: "";
-    position: absolute;
-    left: 11px;
-    top: 11px;
-    width: 15px;
-    height: 15px;
-    background-color: @red;
-    border-radius: 100%;
-    opacity: 1;
-  }
+.device__radio:checked + .device__label::after,
+.device__radio:not(:checked) + .device__label::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  width: 15px;
+  height: 15px;
+  background-color: @red;
+  border-radius: 100%;
+  opacity: 1;
+}
 
-  input[type="radio"]:not(:checked) + label:after {
-    opacity: 0;
-  }
+.device__radio:not(:checked) + .device__label::after {
+  opacity: 0;
 }

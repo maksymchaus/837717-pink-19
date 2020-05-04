@@ -1,7 +1,6 @@
 .page-head {
-  min-height: 170px;
   background: url("../img/bg-back-mobile@1x.jpg");
-  padding-top: 30px;
+  margin-top: 30px;
 
   h1 {
     font-family: @font-family;
@@ -11,7 +10,52 @@
     color: #ffffff;
     text-align: center;
 
-    max-width: 230px;
     margin: 0 auto;
+  }
+}
+
+.page-head__photo {
+  padding: 0 45px;
+}
+
+.page-head__form {
+  padding: 0 45px;
+}
+
+@media (min-width: 660px) {
+  .page-head {
+    background: none;
+    margin-top: 70px;
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .page-head__photo {
+    padding: 0 95px;
+  }
+
+  .page-head__form {
+    padding: 0 95px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-head {
+    background: none;
+    margin-top: 77px;
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .page-head__photo {
+    padding: 0 400px;
+  }
+
+  .page-head__form {
+    padding: 0 150px;
   }
 }

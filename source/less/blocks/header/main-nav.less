@@ -1,6 +1,6 @@
 .main-nav__top {
   width: 320px;
-  height: 69px;
+  min-height: 69px;
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
@@ -8,6 +8,12 @@
   padding-left: 15px;
   padding-right: 15px;
   box-shadow: 0 1px 0 0 #000000;
+}
+
+.main-nav__logo {
+  display: block;
+  background: url("../img/logo-pink-white-mobile.svg") no-repeat;
+  width: 80px;
 }
 
 .main-nav__toggle {
@@ -29,4 +35,64 @@
 
 .main-nav__list:last-child {
   margin-bottom: 1px;
+}
+
+@media (min-width: 660px) {
+  .main-nav {
+    background-color: @bg-header;
+  }
+
+  .main-nav__top {
+    width: 660px;
+    padding-bottom: 35px;
+    padding-top: 30px;
+  }
+
+  .main-nav__logo {
+    width: 150px;
+    height: 45px;
+    background: url("../img/logo-pink-white-desktop.svg") no-repeat;
+  }
+
+  .main-nav__toggle {
+    margin-top: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    padding-top: 25px;
+    padding-right: 130px;
+    padding-left: 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+
+  .main-nav__logo {
+    width: 150px;
+    background: url("../img/logo-pink-white-desktop.svg") no-repeat;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__top {
+    width: 150px;
+    min-height: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .main-nav__list {
+    width: 625px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

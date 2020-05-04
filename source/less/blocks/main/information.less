@@ -33,3 +33,111 @@
   margin: 0 auto;
   margin-top: 20px;
 }
+
+.information__bg-image--item1,
+.information__bg-image--item2 {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .information__text-wrap {
+    width: 600px;
+    padding-top: 45px;
+  }
+
+  .information__text {
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 0;
+
+    &--top {
+      width: 600px;
+    }
+
+    &--bottom {
+      width: 340px;
+    }
+  }
+
+  .information__list-wrap {
+    background: url("../../../img/shape_2_tablet.png") no-repeat;
+    min-height: auto;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .information__bg-image {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    width: 265px;
+    min-height: 470px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .information__text {
+    font-size: 50px;
+    margin: 0 auto;
+    padding: 0;
+
+    &--top {
+      width: 740px;
+    }
+
+    &--bottom {
+      width: 440px;
+    }
+  }
+
+  .information__text-wrap {
+    width: 740px;
+    padding-top: 70px;
+  }
+
+  .information__list-wrap {
+    background: url("../img/shape_2_desktop.png") no-repeat;
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 75px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .information__bg-image--item1 {
+    display: block;
+    background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat;
+    width: 200px;
+    min-height: 300px;
+    margin-top: 0;
+  }
+
+  .information__bg-image--item2 {
+    display: block;
+    background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat;
+    width: 200px;
+    min-height: 300px;
+    margin-top: 0;
+  }
+
+  .information__bg-image--item3 {
+    display: block;
+    background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat;
+    width: 200px;
+    min-height: 300px;
+    margin-top: 0;
+  }
+
+  .information__bg-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

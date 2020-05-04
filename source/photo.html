@@ -7,12 +7,10 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--photo">
       <nav class="main-nav">
         <div class="main-nav__top">
-          <a class="logo" href="index.html">
-            <img class="logo-image" src="img/logo-pink-white-mobile.svg" alt="логотип Pink">
-          </a>
+          <a class="main-nav__logo" href="index.html"></a>
           <button class="main-nav__toggle" type="button"></button>
         </div>
         <ul class="main-nav__list site-list">
@@ -31,7 +29,7 @@
         </ul>
       </nav>
       <div class="page-head">
-        <h1>Фотографии пользоватилей</h1>
+        <h1 class="page-head__photo">Фотографии пользоватилей</h1>
       </div>
     </header>
 
@@ -41,30 +39,30 @@
         выкладывают пользователи!
         Видите, как не хватает ваших?
       </p>
+      <div class="panorama">
+        <span class="panorama__oftheday">панорама дня</span>
+      </div>
+      <div class="panorama-wrap">
+        <div class="panorama-wrap__name-wrap">
+          <span class="panorama-wrap__comment-name">Анна</span>
+          <span class="panorama-wrap__comment-time">(5 минут назад)</span>
+        </div>
+        <p class="panorama-wrap__comment">
+          Прыгать или нет? Напишите в
+          коментарии свой совет и смотрите
+          прямую трансляцию в перископе,
+          задавайте свои вопросы!
+        </p>
+        <div class="panorama-wrap__button-wrap">
+          <button class="panorama-wrap__like-button" type="button">
+            <img src="img/icon-heart.svg" alt="лайк">
+          </button>
+          <span class="panorama-wrap__comment-like">нравиться:215</span>
+        </div>
+      </div>
       <ul class="userphotos-list">
         <li class="userphotos-list__item">
-          <div class="panorama">
-            <span class="panorama__oftheday">панорама дня</span>
-            <img class="userphotos-list__photo" src="img/panorama-mobile@1x.jpg" alt="панорама">
-          </div>
-          <div class="userphotos-list__wrap">
-            <p class="userphotos-list__comment">
-              <span class="userphotos-list__comment-name">Анна</span>
-              <span class="userphotos-list__comment-time">(5 минут назад)</span>
-              <br>
-              Прыгать или нет? Напишите в
-              коментарии свой совет и смотрите
-              прямую трансляцию в перископе,
-              задавайте свои вопросы!
-            </p>
-            <button class="like-button" type="button">
-              <img src="img/icon-heart.svg" alt="лайк">
-            </button>
-            <span class="userphotos-list__comment-like">нравиться:215</span>
-          </div>
-        </li>
-        <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-car-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo userphotos-list__photo--car"></div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Левон</span>
@@ -73,6 +71,8 @@
               Вчера он на луну летал, сегодня
               в руки к нам попал.
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
@@ -80,7 +80,7 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-drumset-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo userphotos-list__photo--drumset"></div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Антон</span>
@@ -88,6 +88,8 @@
               <br>
               Соседи будут рады!
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
@@ -95,7 +97,7 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-window-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo userphotos-list__photo--window"></div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Борис</span>
@@ -104,14 +106,16 @@
               Здесь могла быть ваша цитата о
               высоком и вечном.
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
-            <span class="userphotos-list__comment-like">Нравится: 215</span>
+            <span class="userphotos-list__comment-like">Нравится: 666</span>
           </div>
         </li>
         <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-fair-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo userphotos-list__photo--fair"></div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Сергей</span>
@@ -119,14 +123,16 @@
               <br>
               Самая кубанская в мире!
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
-            <span class="userphotos-list__comment-like">Нравится: 4</span>
+            <span class="userphotos-list__comment-like">Нравится: 666</span>
           </div>
         </li>
         <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-pov-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo userphotos-list__photo--pov"></div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Максим</span>
@@ -134,14 +140,16 @@
               <br>
               Где снег-то?
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
-            <span class="userphotos-list__comment-like">Нравится: 150</span>
+            <span class="userphotos-list__comment-like">Нравится: 666</span>
           </div>
         </li>
         <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-wing-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo userphotos-list__photo--wing"></div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Надежда</span>
@@ -149,10 +157,12 @@
               <br>
               Всем GM и взаимные лайки!
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
-            <span class="userphotos-list__comment-like">Нравится: 2560</span>
+            <span class="userphotos-list__comment-like">Нравится: 666</span>
           </div>
         </li>
       </ul>

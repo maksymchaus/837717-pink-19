@@ -1,5 +1,9 @@
 .panorama {
   position: relative;
+  margin: 0 auto;
+  width: 320px;
+  min-height: 140px;
+  background: url("../img/panorama-mobile@1x.jpg") no-repeat;
 }
 
 .panorama__oftheday {
@@ -18,4 +22,25 @@
   color: #ffffff;
   text-align: center;
   padding-top: 5px;
+}
+
+@media (min-width: 660px) {
+  .panorama {
+    width: 660px;
+    min-height: 507px;
+    background: url("../img/panorama-tablet@1x.jpg") no-repeat;
+  }
+
+  .panorama__oftheday {
+    left: 77%;
+    top: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .panorama {
+    width: 1200px;
+    min-height: 507px;
+    background: url("../img/panorama-desktop@1x.jpg") no-repeat;
+  }
 }

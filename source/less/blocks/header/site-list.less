@@ -2,7 +2,7 @@
   .font-nav ();
   box-shadow: 0 1px 0 0 #000000;
   min-height: 64px;
-  padding-top: 16px;
+  padding-top: 17px;
 
   a {
     display: block;
@@ -10,5 +10,31 @@
     min-height: 48px;
     text-align: center;
     color: #ffffff;
+  }
+}
+
+@media (min-width: 600px) {
+  .site-list__item a {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-list__item {
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+    box-shadow: none;
+
+    min-height: auto;
+    padding-top: 20px;
+
+    a {
+      display: block;
+      width: auto;
+      height: auto;
+      text-align: center;
+      color: #ffffff;
+    }
   }
 }

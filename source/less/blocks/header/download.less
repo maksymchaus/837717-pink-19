@@ -14,8 +14,8 @@
 .download__bottom {
   width: 320px;
   background-color: @bg-header;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .download__text {
@@ -25,8 +25,102 @@
   font-weight: 300;
   color: #ffffff;
   width: 240px;
-  min-height: 27px;
+  padding-top: 20px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 20px;
+}
+
+.download__slogan {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .download {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    width: 660px;
+    min-height: 620px;
+    position: relative;
+
+    padding-top: 75px;
+  }
+
+  .download__top {
+    width: 660px;
+    min-height: 545px;
+    position: absolute;
+
+    background: url("../img/iphone-hand-tablet@1x.png");
+  }
+
+  .download__slogan {
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .download__bottom {
+    background: none;
+    margin-left: 10px;
+    padding: 15px 0;
+    position: absolute;
+  }
+
+  .download__text {
+    margin-top: 20px;
+    width: 300px;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download {
+    background: none;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+
+    padding-left: 110px;
+    padding-right: 130px;
+    padding-top: 107px;
+  }
+
+  .download__top {
+    min-height: 635px;
+    margin-top: 17px;
+    margin-left: 350px;
+    background: url("../img/iphone-hand-desktop@1x__copy.png") no-repeat;
+  }
+
+  .download__slogan {
+    display: block;
+    width: 240px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .download__bottom {
+    background: none;
+    padding-top: 20px;
+  }
+
+  .download__text {
+    margin-top: 40px;
+    width: 300px;
+
+    font-size: 18px;
+  }
 }

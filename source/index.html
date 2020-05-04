@@ -2,17 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy:Pink</title>
-    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: Пинк</title>
   </head>
-
   <body>
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__top">
-          <a class="logo">
-            <img class="logo-image" src="img/logo-pink-white-mobile.svg" alt="логотип Pink">
-          </a>
+          <a class="main-nav__logo"></a>
           <button class="main-nav__toggle" type="button"></button>
         </div>
         <ul class="main-nav__list site-list">
@@ -35,6 +31,9 @@
         <h2 class="visually-hidden">Загрузка Приложения</h2>
         <div class="download__top"></div>
         <div class="download__bottom">
+          <p class="download__slogan">
+            Взгляните на жизнь иначе!
+          </p>
           <a class="download-button" href="https://www.apple.com">Скачать приложение</a>
           <ul class="download-os">
             <li class="download-os__item download-os__item--apple">
@@ -61,8 +60,8 @@
     <main class="page-main">
       <div class="information">
         <div class="information__text-wrap">
-          <p class="information__text">Устали от серости мегаполиса?</p>
-          <p class="information__text">Нам есть,что вам предложить!</p>
+          <p class="information__text information__text--top">Устали от серости мегаполиса?</p>
+          <p class="information__text information__text--bottom">Нам есть,что вам предложить!</p>
         </div>
         <div class="information__list-wrap">
           <ul class="information-list">
@@ -91,7 +90,25 @@
               </p>
             </li>
           </ul>
-          <div class="information__bg-image"></div>
+          <div class="information__bg-wrap">
+            <div class="information__bg-image information__bg-image--item1"></div>
+            <div class="information__bg-image information__bg-image--item2"></div>
+            <div class="information__bg-image information__bg-image--item3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hours">
+        <div class="timer">
+          <div class="timer__inner">24</div>
+        </div>
+        <div class="effect">
+          <h3>Эффект на 24 часа!</h3>
+          <p>
+            Британские ученые провели исследования и доказали,
+            что положительный эффект от использования приложения
+            длится целые сутки!
+          </p>
+          <a href="#">Узнать больше об исследовании</a>
         </div>
       </div>
       <section class="recall">
@@ -228,6 +245,27 @@
         <div class="contacts__triangle-bg"></div>
       </section>
     </main>
-
+    <footer class="page-footer page-footer--none">
+      <a class="footer-logo" href="index.html">
+        <img src="img/logo-pink-blue-mobile.svg" alt="логотип">
+      </a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twiter" href="#"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--fb" href="#"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="#"></a>
+        </li>
+      </ul>
+      <div class="footer-develop">
+        <span>Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

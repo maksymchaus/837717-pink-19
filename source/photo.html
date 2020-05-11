@@ -9,24 +9,26 @@
   <body>
     <header class="page-header page-header--photo">
       <nav class="main-nav">
-        <div class="main-nav__top">
-          <a class="main-nav__logo" href="index.html"></a>
-          <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__container">
+          <div class="main-nav__top">
+            <a class="main-nav__logo" href="index.html"></a>
+            <button class="main-nav__toggle" type="button"></button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
       </nav>
       <div class="page-head">
         <h1 class="page-head__photo">Фотографии пользоватилей</h1>
@@ -40,6 +42,9 @@
         Видите, как не хватает ваших?
       </p>
       <div class="panorama">
+        <img class="panorama__mobile" src="img/panorama-mobile@1x.jpg" alt="панорама">
+        <img class="panorama__tablet" src="img/panorama-tablet@1x.jpg" alt="панорама">
+        <img class="panorama__desktop" src="img/panorama-desktop@1x.jpg" alt="панорама">
         <span class="panorama__oftheday">панорама дня</span>
       </div>
       <div class="panorama-wrap">
@@ -62,7 +67,11 @@
       </div>
       <ul class="userphotos-list">
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo userphotos-list__photo--car"></div>
+          <div class="userphotos-list__photo">
+            <img class="userphotos-list__mobile" src="img/photo-car-mobile@1x.jpg" alt="фото">
+            <img class="userphotos-list__tablet" src="img/photo-car-tablet@1x.jpg" alt="фото">
+            <img class="userphotos-list__desktop" src="img/photo-car-desktop@1x.jpg" alt="фото">
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Левон</span>
@@ -80,7 +89,11 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo userphotos-list__photo--drumset"></div>
+          <div class="userphotos-list__photo">
+            <img class="userphotos-list__mobile" src="img/photo-drumset-mobile@1x.jpg" alt="фото">
+            <img class="userphotos-list__tablet" src="img/photo-drumset-tablet@1x.jpg" alt="фото">
+            <img class="userphotos-list__desktop" src="img/photo-drumset-desktop@1x.jpg" alt="фото">
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Антон</span>
@@ -97,7 +110,11 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo userphotos-list__photo--window"></div>
+          <div class="userphotos-list__photo">
+            <img class="userphotos-list__mobile" src="img/photo-window-mobile@1x.jpg" alt="фото">
+            <img class="userphotos-list__tablet" src="img/photo-window-tablet@1x.jpg" alt="фото">
+            <img class="userphotos-list__desktop" src="img/photo-wing-desktop@1x.jpg" alt="фото">
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Борис</span>
@@ -115,7 +132,11 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo userphotos-list__photo--fair"></div>
+          <div class="userphotos-list__photo">
+            <img class="userphotos-list__mobile" src="img/photo-fair-mobile@1x.jpg" alt="фото">
+            <img class="userphotos-list__tablet" src="img/photo-fair-tablet@1x.jpg" alt="фото">
+            <img class="userphotos-list__desktop" src="img/photo-fair-desktop@1x.jpg" alt="фото">
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Сергей</span>
@@ -132,7 +153,11 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo userphotos-list__photo--pov"></div>
+          <div class="userphotos-list__photo">
+            <img class="userphotos-list__mobile" src="img/photo-pov-mobile@1x.jpg" alt="фото">
+            <img class="userphotos-list__tablet" src="img/photo-pov-tablet@1x.jpg" alt="фото">
+            <img class="userphotos-list__desktop" src="img/photo-pov-desktop@1x.jpg" alt="фото">
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Максим</span>
@@ -149,7 +174,11 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo userphotos-list__photo--wing"></div>
+          <div class="userphotos-list__photo">
+            <img class="userphotos-list__mobile" src="img/photo-wing-mobile@1x.jpg" alt="фото">
+            <img class="userphotos-list__tablet" src="img/photo-wing-tablet@1x.jpg" alt="фото">
+            <img class="userphotos-list__desktop" src="img/photo-wing-desktop@1x.jpg" alt="фото">
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Надежда</span>
@@ -173,52 +202,94 @@
         в телефоне!
       </p>
 
-
       <form class="sharing" action="https://echo.htmlacademy.ru" method="POST">
-        <img class="sharing__image" src="img/photo-road-mobile@1x.jpg" alt="фото">
-        <ul class="sharing-list">
-          <li class="sharing-list__item sharing-list__item--cut">
-            <button type="button"></button>
-          </li>
-          <li class="sharing-list__item sharing-list__item--fill">
-            <button type="button"></button>
-          </li>
-          <li class="sharing-list__item sharing-list__item--bright">
-            <button type="button"></button>
-          </li>
-        </ul>
-        <div class="sharing-range">
-          <div class="sharing-range__scale"></div>
-          <div class="sharing-range__toggle"></div>
-        </div>
-        <div class="crossline"></div>
-        <div class="button-wrap">
-          <button class="sharing-button" type="submit">Запостить</button>
-          <button class="sharing-button" type="reset">Отмена</button>
+        <div class="sharing__content">
+          <img class="sharing__image sharing__image--mobile" src="img/photo-road-mobile@1x.jpg" alt="фото">
+          <img class="sharing__image sharing__image--tablet" src="img/photo-road-tablet@1x.jpg" alt="фото">
+          <img class="sharing__image sharing__image--desktop" src="img/photo-road-desktop@1x.jpg" alt="фото">
+
+          <div class="sharing__wrap">
+            <ul class="sharing-list">
+              <li class="sharing-list__item sharing-list__item--cut">
+                <button type="button"></button>
+              </li>
+              <li class="sharing-list__item sharing-list__item--fill">
+                <button type="button"></button>
+              </li>
+              <li class="sharing-list__item sharing-list__item--bright">
+                <button type="button"></button>
+              </li>
+            </ul>
+            <div class="sharing-range">
+              <div class="sharing-range__scale"></div>
+              <div class="sharing-range__toggle"></div>
+            </div>
+            <div class="crossline"></div>
+            <div class="button-wrap">
+              <button class="sharing-button" type="submit">Запостить</button>
+              <button class="sharing-button" type="reset">Отмена</button>
+            </div>
+          </div>
+
+          <div class="sharing__desktop-wrap">
+            <ul class="sharing-list">
+              <li class="sharing-list__item sharing-list__item--cut">
+                <button type="button"></button>
+                <div class="sharing-range">
+                  <div class="sharing-range__scale"></div>
+                  <div class="sharing-range__toggle"></div>
+                </div>
+                <div class="crossline"></div>
+              </li>
+              <li class="sharing-list__item sharing-list__item--fill">
+                <button type="button"></button>
+                <div class="sharing-range">
+                  <div class="sharing-range__scale"></div>
+                  <div class="sharing-range__toggle"></div>
+                </div>
+                <div class="crossline"></div>
+              </li>
+              <li class="sharing-list__item sharing-list__item--bright">
+                <button type="button"></button>
+                <div class="sharing-range">
+                  <div class="sharing-range__scale"></div>
+                  <div class="sharing-range__toggle"></div>
+                </div>
+                <div class="crossline"></div>
+              </li>
+            </ul>
+            <div class="button-wrap">
+              <button class="sharing-button" type="submit">Запостить</button>
+              <button class="sharing-button" type="reset">Отмена</button>
+            </div>
+          </div>
+
         </div>
       </form>
     </main>
 
     <footer class="page-footer">
-      <a class="footer-logo" href="index.html">
-        <img src="img/logo-pink-blue-mobile.svg" alt="логотип">
-      </a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--twiter" href="#"></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--fb" href="#"></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube" href="#"></a>
-        </li>
-      </ul>
-      <div class="footer-develop">
-        <span>Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
+      <div class="page-footer__wrap">
+        <a class="footer-logo" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" alt="логотип">
         </a>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twiter" href="#"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--fb" href="#"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--youtube" href="#"></a>
+          </li>
+        </ul>
+        <div class="footer-develop">
+          <span>Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

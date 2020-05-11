@@ -1,6 +1,7 @@
 .userphotos-list {
-  margin: 0;
-  padding: 0;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .userphotos-list__item {
@@ -9,34 +10,18 @@
 }
 
 .userphotos-list__photo {
-  display: block;
   margin: 0 auto;
   width: 280px;
   min-height: 180px;
 }
 
-.userphotos-list__photo--car {
-  background: url("../img/photo-car-mobile@1x.jpg");
+.userphotos-list__mobile {
+  display: block;
 }
 
-.userphotos-list__photo--drumset {
-  background: url("../img/photo-drumset-mobile@1x.jpg");
-}
-
-.userphotos-list__photo--window {
-  background: url("../img/photo-window-mobile@1x.jpg");
-}
-
-.userphotos-list__photo--fair {
-  background: url("../img/photo-fair-mobile@1x.jpg");
-}
-
-.userphotos-list__photo--pow {
-  background: url("../img/photo-pov-mobile@1x.jpg");
-}
-
-.userphotos-list__photo--wing {
-  background: url("../img/photo-wing-mobile@1x.jpg");
+.userphotos-list__desktop,
+.userphotos-list__tablet {
+  display: none;
 }
 
 .userphotos-list__comment {
@@ -99,28 +84,13 @@
     min-height: 300px;
   }
 
-  .userphotos-list__photo--car {
-    background: url("../img/photo-car-tablet@1x.jpg");
+  .userphotos-list__tablet {
+    display: block;
   }
 
-  .userphotos-list__photo--drumset {
-    background: url("../img/photo-drumset-tablet@1x.jpg");
-  }
-
-  .userphotos-list__photo--window {
-    background: url("../img/photo-window-tablet@1x.jpg");
-  }
-
-  .userphotos-list__photo--fair {
-    background: url("../img/photo-fair-tablet@1x.jpg");
-  }
-
-  .userphotos-list__photo--pow {
-    background: url("../img/photo-pov-tablet@1x.jpg");
-  }
-
-  .userphotos-list__photo--wing {
-    background: url("../img/photo-wing-tablet@1x.jpg");
+  .userphotos-list__desktop,
+  .userphotos-list__mobile {
+    display: none;
   }
 
   .userphotos-list__wrap {
@@ -144,7 +114,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .userphotos-list {
     width: 960px;
     margin: 0 auto;
@@ -159,32 +129,18 @@
   }
 
   .userphotos-list__photo {
+    display: block;
     width: 300px;
     min-height: 400px;
   }
 
-  .userphotos-list__photo--car {
-    background: url("../img/photo-car-desktop@1x.jpg");
+  .userphotos-list__desktop {
+    display: block;
   }
 
-  .userphotos-list__photo--drumset {
-    background: url("../img/photo-drumset-desktop@1x.jpg");
-  }
-
-  .userphotos-list__photo--window {
-    background: url("../img/photo-window-desktop@1x.jpg");
-  }
-
-  .userphotos-list__photo--fair {
-    background: url("../img/photo-fair-desktop@1x.jpg");
-  }
-
-  .userphotos-list__photo--pow {
-    background: url("../img/photo-pov-desktop@1x.jpg");
-  }
-
-  .userphotos-list__photo--wing {
-    background: url("../img/photo-wing-desktop@1x.jpg");
+  .userphotos-list__mobile,
+  .userphotos-list__tablet {
+    display: none;
   }
 
   .userphotos-list__wrap {

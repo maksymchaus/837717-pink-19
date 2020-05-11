@@ -1,9 +1,15 @@
 .panorama {
   position: relative;
+}
+
+.panorama__mobile {
+  display: block;
   margin: 0 auto;
-  width: 320px;
-  min-height: 140px;
-  background: url("../img/panorama-mobile@1x.jpg") no-repeat;
+}
+
+.panorama__desktop,
+.panorama__tablet {
+  display: none;
 }
 
 .panorama__oftheday {
@@ -14,6 +20,7 @@
 
   position: absolute;
   left: 50%;
+  top: 0;
 
   font-size: 12px;
   line-height: 24px;
@@ -25,22 +32,30 @@
 }
 
 @media (min-width: 660px) {
-  .panorama {
-    width: 660px;
-    min-height: 507px;
-    background: url("../img/panorama-tablet@1x.jpg") no-repeat;
+  .panorama__desktop,
+  .panorama__mobile {
+    display: none;
+  }
+
+  .panorama__tablet {
+    display: block;
+    margin: 0 auto;
   }
 
   .panorama__oftheday {
-    left: 77%;
-    top: 10%;
+    left: 72%;
+    top: 11%;
   }
 }
 
-@media (min-width: 1200px) {
-  .panorama {
-    width: 1200px;
-    min-height: 507px;
-    background: url("../img/panorama-desktop@1x.jpg") no-repeat;
+@media (min-width: 960px) {
+  .panorama__mobile,
+  .panorama__tablet {
+    display: none;
+  }
+
+  .panorama__desktop {
+    display: block;
+    margin: 0 auto;
   }
 }

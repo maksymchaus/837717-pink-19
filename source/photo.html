@@ -42,9 +42,11 @@
         Видите, как не хватает ваших?
       </p>
       <div class="panorama">
-        <img class="panorama__mobile" src="img/panorama-mobile@1x.jpg" alt="панорама">
-        <img class="panorama__tablet" src="img/panorama-tablet@1x.jpg" alt="панорама">
-        <img class="panorama__desktop" src="img/panorama-desktop@1x.jpg" alt="панорама">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+          <img class="panorama__image" src="img/panorama-mobile@1x.jpg" alt="фото">
+        </picture>
         <span class="panorama__oftheday">панорама дня</span>
       </div>
       <div class="panorama-wrap">
@@ -68,9 +70,11 @@
       <ul class="userphotos-list">
         <li class="userphotos-list__item">
           <div class="userphotos-list__photo">
-            <img class="userphotos-list__mobile" src="img/photo-car-mobile@1x.jpg" alt="фото">
-            <img class="userphotos-list__tablet" src="img/photo-car-tablet@1x.jpg" alt="фото">
-            <img class="userphotos-list__desktop" src="img/photo-car-desktop@1x.jpg" alt="фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-car-mobile@1x.jpg" alt="фото">
+            </picture>
           </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
@@ -90,9 +94,11 @@
         </li>
         <li class="userphotos-list__item">
           <div class="userphotos-list__photo">
-            <img class="userphotos-list__mobile" src="img/photo-drumset-mobile@1x.jpg" alt="фото">
-            <img class="userphotos-list__tablet" src="img/photo-drumset-tablet@1x.jpg" alt="фото">
-            <img class="userphotos-list__desktop" src="img/photo-drumset-desktop@1x.jpg" alt="фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-drumset-mobile@1x.jpg" alt="фото">
+            </picture>
           </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
@@ -111,9 +117,11 @@
         </li>
         <li class="userphotos-list__item">
           <div class="userphotos-list__photo">
-            <img class="userphotos-list__mobile" src="img/photo-window-mobile@1x.jpg" alt="фото">
-            <img class="userphotos-list__tablet" src="img/photo-window-tablet@1x.jpg" alt="фото">
-            <img class="userphotos-list__desktop" src="img/photo-wing-desktop@1x.jpg" alt="фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-window-mobile@1x.jpg" alt="фото">
+            </picture>
           </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
@@ -133,9 +141,11 @@
         </li>
         <li class="userphotos-list__item">
           <div class="userphotos-list__photo">
-            <img class="userphotos-list__mobile" src="img/photo-fair-mobile@1x.jpg" alt="фото">
-            <img class="userphotos-list__tablet" src="img/photo-fair-tablet@1x.jpg" alt="фото">
-            <img class="userphotos-list__desktop" src="img/photo-fair-desktop@1x.jpg" alt="фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-fair-mobile@1x.jpg" alt="фото">
+            </picture>
           </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
@@ -154,9 +164,11 @@
         </li>
         <li class="userphotos-list__item">
           <div class="userphotos-list__photo">
-            <img class="userphotos-list__mobile" src="img/photo-pov-mobile@1x.jpg" alt="фото">
-            <img class="userphotos-list__tablet" src="img/photo-pov-tablet@1x.jpg" alt="фото">
-            <img class="userphotos-list__desktop" src="img/photo-pov-desktop@1x.jpg" alt="фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-pov-mobile@1x.jpg" alt="фото">
+            </picture>
           </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
@@ -175,9 +187,11 @@
         </li>
         <li class="userphotos-list__item">
           <div class="userphotos-list__photo">
-            <img class="userphotos-list__mobile" src="img/photo-wing-mobile@1x.jpg" alt="фото">
-            <img class="userphotos-list__tablet" src="img/photo-wing-tablet@1x.jpg" alt="фото">
-            <img class="userphotos-list__desktop" src="img/photo-wing-desktop@1x.jpg" alt="фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-wing-mobile@1x.jpg" alt="фото">
+            </picture>
           </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
@@ -204,10 +218,11 @@
 
       <form class="sharing" action="https://echo.htmlacademy.ru" method="POST">
         <div class="sharing__content">
-          <img class="sharing__image sharing__image--mobile" src="img/photo-road-mobile@1x.jpg" alt="фото">
-          <img class="sharing__image sharing__image--tablet" src="img/photo-road-tablet@1x.jpg" alt="фото">
-          <img class="sharing__image sharing__image--desktop" src="img/photo-road-desktop@1x.jpg" alt="фото">
-
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+            <img class="sharing__image" src="img/photo-road-mobile@1x.jpg" alt="фото"">
+          </picture>
           <div class="sharing__wrap">
             <ul class="sharing-list">
               <li class="sharing-list__item sharing-list__item--cut">

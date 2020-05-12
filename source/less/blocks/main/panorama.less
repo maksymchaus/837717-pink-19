@@ -2,14 +2,9 @@
   position: relative;
 }
 
-.panorama__mobile {
+.panorama__image {
   display: block;
   margin: 0 auto;
-}
-
-.panorama__desktop,
-.panorama__tablet {
-  display: none;
 }
 
 .panorama__oftheday {
@@ -32,30 +27,8 @@
 }
 
 @media (min-width: 660px) {
-  .panorama__desktop,
-  .panorama__mobile {
-    display: none;
-  }
-
-  .panorama__tablet {
-    display: block;
-    margin: 0 auto;
-  }
-
   .panorama__oftheday {
     left: 72%;
     top: 11%;
-  }
-}
-
-@media (min-width: 960px) {
-  .panorama__mobile,
-  .panorama__tablet {
-    display: none;
-  }
-
-  .panorama__desktop {
-    display: block;
-    margin: 0 auto;
   }
 }

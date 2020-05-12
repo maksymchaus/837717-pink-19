@@ -5,28 +5,17 @@
 }
 
 .sharing__image {
-  margin-bottom: 35px;
-
-  &--mobile {
-    display: block;
-    margin: 0 auto;
-  }
+  display: block;
+  margin: 0 auto;
+  margin-bottom: px;
 }
 
-.sharing__image--tablet,
-.sharing__image--desktop,
 .sharing__desktop-wrap {
   display: none;
 }
 
 @media (min-width: 660px) {
-  .sharing__image--desktop,
-  .sharing__image--mobile {
-    display: none;
-  }
-
-  .sharing__image--tablet {
-    display: block;
+  .sharing__image {
     margin: 0 10px;
   }
 
@@ -54,12 +43,7 @@
 }
 
 @media (min-width: 960px) {
-  .sharing__image--mobile,
-  .sharing__image--tablet {
-    display: none;
-  }
-
-  .sharing__image--desktop {
+  .sharing__image {
     display: block;
     padding-left: 40px;
   }

@@ -7,32 +7,34 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--form">
       <nav class="main-nav">
-        <div class="main-nav__top">
-          <a class="logo" href="index.html">
-            <img class="logo-image" src="img/logo-pink-white-mobile.svg" alt="логотип Pink">
-          </a>
-          <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__container">
+          <div class="main-nav__top">
+            <a class="main-nav__logo" href="index.html"></a>
+            <button class="main-nav__toggle" type="button"></button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
       </nav>
       <div class="page-head">
-        <h1>Конкурс на самое
-        <br>безбашенное путешествие с Пинк</h1>
+        <h1 class="page-head__form">
+          Конкурс на самое
+          безбашенное путешествие с Пинк
+        </h1>
       </div>
     </header>
 
@@ -61,36 +63,38 @@
         </fieldset>
 
         <fieldset class="achievement">
-          <legend class="achievement__legend">
-            Ваши безбашенные
-            достижения в путешествиях
-          </legend>
-          <ul class="achievement-list">
-            <li class="achievement-list__item">
-              <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="selfie" id="achievement-selfie" checked>
-              <label class="achievement__label" for="achievement-selfie">Сделал селфи с акулой</label>
-            </li>
-            <li class="achievement-list__item">
-              <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="baked" id="achievement-baked" checked>
-              <label class="achievement__label" for="achievement-baked">Обгорел на пляже</label>
-            </li>
-            <li class="achievement-list__item">
-              <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="ChuckNorris" id="achievement-ChuckNorris">
-              <label class="achievement__label" for="achievement-ChuckNorris">Видел Чака Норриса</label>
-            </li>
-            <li class="achievement-list__item">
-              <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="souvenir" id="achievement-souvenir">
-              <label class="achievement__label" for="achievement-souvenir">Накупил сувениров</label>
-            </li>
-            <li class="achievement-list__item">
-              <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="keeptower" id="achievement-keeptower" checked>
-              <label class="achievement__label" for="achievement-keeptower">Удержал башню</label>
-            </li>
-            <li class="achievement-list__item">
-              <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="crashhotel" id="achievement-crashhotel">
-              <label class="achievement__label" for="achievement-crashhotel">Разгромил отель</label>
-            </li>
-          </ul>
+          <div class="achievement__wrap">
+            <legend class="achievement__legend">
+              Ваши безбашенные
+              достижения в путешествиях
+            </legend>
+            <ul class="achievement-list">
+              <li class="achievement-list__item">
+                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="selfie" id="achievement-selfie" checked>
+                <label class="achievement__label" for="achievement-selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="achievement-list__item">
+                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="baked" id="achievement-baked" checked>
+                <label class="achievement__label" for="achievement-baked">Обгорел на пляже</label>
+              </li>
+              <li class="achievement-list__item">
+                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="ChuckNorris" id="achievement-ChuckNorris">
+                <label class="achievement__label" for="achievement-ChuckNorris">Видел Чака Норриса</label>
+              </li>
+              <li class="achievement-list__item">
+                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="souvenir" id="achievement-souvenir">
+                <label class="achievement__label" for="achievement-souvenir">Накупил сувениров</label>
+              </li>
+              <li class="achievement-list__item">
+                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="keeptower" id="achievement-keeptower" checked>
+                <label class="achievement__label" for="achievement-keeptower">Удержал башню</label>
+              </li>
+              <li class="achievement-list__item">
+                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="crashhotel" id="achievement-crashhotel">
+                <label class="achievement__label" for="achievement-crashhotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
 
         <fieldset class="user-contact">
@@ -107,21 +111,23 @@
         </fieldset>
 
         <fieldset class="device">
-          <legend class="device__legend">С каким приложением путешествовали?</legend>
-          <ul class="device-list">
-            <li class="device-list__item">
-              <input class="device__radio visually-hidden" type="radio" id="device-ios" name="device" value="iOS" checked>
-              <label class="device__label" for="device-ios">Pink для iOS</label>
-            </li>
-            <li class="device-list__item">
-              <input class="device__radio visually-hidden" type="radio" id="device-android" name="device" value="Android">
-              <label class="device__label" for="device-android">Pink на Android</label>
-            </li>
-            <li class="device-list__item">
-              <input class="device__radio visually-hidden" type="radio" id="device-windows" name="device" value="Windows">
-              <label class="device__label" for="device-windows">Windows Phone</label>
-            </li>
-          </ul>
+          <div class="device__wrap">
+            <legend class="device__legend">С каким приложением путешествовали?</legend>
+            <ul class="device-list">
+              <li class="device-list__item">
+                <input class="device__radio visually-hidden" type="radio" id="device-ios" name="device" value="iOS" checked>
+                <label class="device__label" for="device-ios">Pink для iOS</label>
+              </li>
+              <li class="device-list__item">
+                <input class="device__radio visually-hidden" type="radio" id="device-android" name="device" value="Android">
+                <label class="device__label" for="device-android">Pink на Android</label>
+              </li>
+              <li class="device-list__item">
+                <input class="device__radio visually-hidden" type="radio" id="device-windows" name="device" value="Windows">
+                <label class="device__label" for="device-windows">Windows Phone</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
 
         <fieldset class="user-comment">
@@ -136,25 +142,27 @@
     </main>
 
     <footer class="page-footer">
-      <a class="footer-logo" href="index.html">
-        <img src="img/logo-pink-blue-mobile.svg" alt="логотип">
-      </a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--twiter" href="#"></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--fb" href="#"></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube" href="#"></a>
-        </li>
-      </ul>
-      <div class="footer-develop">
-        <span>Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
+      <div class="page-footer__wrap">
+        <a class="footer-logo" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" alt="логотип">
         </a>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twiter" href="#"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--fb" href="#"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--youtube" href="#"></a>
+          </li>
+        </ul>
+        <div class="footer-develop">
+          <span>Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

@@ -1,5 +1,5 @@
 .recall {
-  padding-top: 35px;
+  margin-top: 40px;
 }
 
 .recall__user-name {
@@ -10,6 +10,10 @@
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+}
+
+.recall__user-about {
+  display: none;
 }
 
 .recall__comment {
@@ -23,4 +27,85 @@
   line-height: 30px;
   font-weight: 400;
   color: @bg-header;
+}
+
+@media (min-width: 660px) {
+  .recall__comment {
+    width: 620px;
+
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+
+  .recall__user-name {
+    font-size: 20px;
+  }
+
+  .recall__user-about {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: @bg-header;
+  }
+
+  .recall {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .recall__user {
+    order: 1;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 960px) {
+  .recall {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 65px;
+  }
+
+  .recall__comment {
+    width: 690px;
+
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+
+  .recall__user-name {
+    font-size: 24px;
+  }
+
+  .recall__user-about {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: @bg-header;
+  }
+
+  .recall__user {
+    order: 1;
+    margin-bottom: 25px;
+  }
+
+  .recall__quotes {
+    width: 79px;
+    height: 63px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+
+    background: url("../img/icon-quotes.svg") no-repeat;
+    opacity: 0.1;
+  }
 }

@@ -1,5 +1,27 @@
-.page-header {
-  width: 320px;
-  min-height: 326px;
-  background-color: @bg-header;
+@media (min-width: 660px) {
+  .page-header {
+    width: auto;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+  }
+
+  .page-header--photo {
+    padding-bottom: 88px;
+  }
+
+  .page-header--form {
+    padding-bottom: 78px;
+  }
+}
+
+@media (min-width: 960px) {
+  .page-header {
+    min-height: 855px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+  }
+
+  .page-header--photo,
+  .page-header--form {
+    min-height: 390px;
+    padding-bottom: 0;
+  }
 }

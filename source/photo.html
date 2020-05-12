@@ -7,31 +7,31 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--photo">
       <nav class="main-nav">
-        <div class="main-nav__top">
-          <a class="logo" href="index.html">
-            <img class="logo-image" src="img/logo-pink-white-mobile.svg" alt="логотип Pink">
-          </a>
-          <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__container">
+          <div class="main-nav__top">
+            <a class="main-nav__logo" href="index.html"></a>
+            <button class="main-nav__toggle" type="button"></button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
       </nav>
       <div class="page-head">
-        <h1>Фотографии пользоватилей</h1>
+        <h1 class="page-head__photo">Фотографии пользоватилей</h1>
       </div>
     </header>
 
@@ -41,30 +41,41 @@
         выкладывают пользователи!
         Видите, как не хватает ваших?
       </p>
+      <div class="panorama">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+          <img class="panorama__image" src="img/panorama-mobile@1x.jpg" alt="фото">
+        </picture>
+        <span class="panorama__oftheday">панорама дня</span>
+      </div>
+      <div class="panorama-wrap">
+        <div class="panorama-wrap__name-wrap">
+          <span class="panorama-wrap__comment-name">Анна</span>
+          <span class="panorama-wrap__comment-time">(5 минут назад)</span>
+        </div>
+        <p class="panorama-wrap__comment">
+          Прыгать или нет? Напишите в
+          коментарии свой совет и смотрите
+          прямую трансляцию в перископе,
+          задавайте свои вопросы!
+        </p>
+        <div class="panorama-wrap__button-wrap">
+          <button class="panorama-wrap__like-button" type="button">
+            <img src="img/icon-heart.svg" alt="лайк">
+          </button>
+          <span class="panorama-wrap__comment-like">нравиться:215</span>
+        </div>
+      </div>
       <ul class="userphotos-list">
         <li class="userphotos-list__item">
-          <div class="panorama">
-            <span class="panorama__oftheday">панорама дня</span>
-            <img class="userphotos-list__photo" src="img/panorama-mobile@1x.jpg" alt="панорама">
+          <div class="userphotos-list__photo">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-car-mobile@1x.jpg" alt="фото">
+            </picture>
           </div>
-          <div class="userphotos-list__wrap">
-            <p class="userphotos-list__comment">
-              <span class="userphotos-list__comment-name">Анна</span>
-              <span class="userphotos-list__comment-time">(5 минут назад)</span>
-              <br>
-              Прыгать или нет? Напишите в
-              коментарии свой совет и смотрите
-              прямую трансляцию в перископе,
-              задавайте свои вопросы!
-            </p>
-            <button class="like-button" type="button">
-              <img src="img/icon-heart.svg" alt="лайк">
-            </button>
-            <span class="userphotos-list__comment-like">нравиться:215</span>
-          </div>
-        </li>
-        <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-car-mobile@1x.jpg" alt="фото">
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Левон</span>
@@ -73,6 +84,8 @@
               Вчера он на луну летал, сегодня
               в руки к нам попал.
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
@@ -80,7 +93,13 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-drumset-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-drumset-mobile@1x.jpg" alt="фото">
+            </picture>
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Антон</span>
@@ -88,6 +107,8 @@
               <br>
               Соседи будут рады!
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
@@ -95,7 +116,13 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-window-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-window-mobile@1x.jpg" alt="фото">
+            </picture>
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Борис</span>
@@ -104,14 +131,22 @@
               Здесь могла быть ваша цитата о
               высоком и вечном.
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
-            <span class="userphotos-list__comment-like">Нравится: 215</span>
+            <span class="userphotos-list__comment-like">Нравится: 666</span>
           </div>
         </li>
         <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-fair-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-fair-mobile@1x.jpg" alt="фото">
+            </picture>
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Сергей</span>
@@ -119,14 +154,22 @@
               <br>
               Самая кубанская в мире!
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
-            <span class="userphotos-list__comment-like">Нравится: 4</span>
+            <span class="userphotos-list__comment-like">Нравится: 666</span>
           </div>
         </li>
         <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-pov-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-pov-mobile@1x.jpg" alt="фото">
+            </picture>
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Максим</span>
@@ -134,14 +177,22 @@
               <br>
               Где снег-то?
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
-            <span class="userphotos-list__comment-like">Нравится: 150</span>
+            <span class="userphotos-list__comment-like">Нравится: 666</span>
           </div>
         </li>
         <li class="userphotos-list__item">
-          <img class="userphotos-list__photo" src="img/photo-wing-mobile@1x.jpg" alt="фото">
+          <div class="userphotos-list__photo">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="userphotos-list__image" src="img/photo-wing-mobile@1x.jpg" alt="фото">
+            </picture>
+          </div>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Надежда</span>
@@ -149,10 +200,12 @@
               <br>
               Всем GM и взаимные лайки!
             </p>
+          </div>
+          <div class="userphotos-list__button-wrap">
             <button class="like-button" type="button">
               <img src="img/icon-heart.svg" alt="лайк">
             </button>
-            <span class="userphotos-list__comment-like">Нравится: 2560</span>
+            <span class="userphotos-list__comment-like">Нравится: 666</span>
           </div>
         </li>
       </ul>
@@ -163,52 +216,95 @@
         в телефоне!
       </p>
 
-
       <form class="sharing" action="https://echo.htmlacademy.ru" method="POST">
-        <img class="sharing__image" src="img/photo-road-mobile@1x.jpg" alt="фото">
-        <ul class="sharing-list">
-          <li class="sharing-list__item sharing-list__item--cut">
-            <button type="button"></button>
-          </li>
-          <li class="sharing-list__item sharing-list__item--fill">
-            <button type="button"></button>
-          </li>
-          <li class="sharing-list__item sharing-list__item--bright">
-            <button type="button"></button>
-          </li>
-        </ul>
-        <div class="sharing-range">
-          <div class="sharing-range__scale"></div>
-          <div class="sharing-range__toggle"></div>
-        </div>
-        <div class="crossline"></div>
-        <div class="button-wrap">
-          <button class="sharing-button" type="submit">Запостить</button>
-          <button class="sharing-button" type="reset">Отмена</button>
+        <div class="sharing__content">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+            <img class="sharing__image" src="img/photo-road-mobile@1x.jpg" alt="фото"">
+          </picture>
+          <div class="sharing__wrap">
+            <ul class="sharing-list">
+              <li class="sharing-list__item sharing-list__item--cut">
+                <button type="button"></button>
+              </li>
+              <li class="sharing-list__item sharing-list__item--fill">
+                <button type="button"></button>
+              </li>
+              <li class="sharing-list__item sharing-list__item--bright">
+                <button type="button"></button>
+              </li>
+            </ul>
+            <div class="sharing-range">
+              <div class="sharing-range__scale"></div>
+              <div class="sharing-range__toggle"></div>
+            </div>
+            <div class="crossline"></div>
+            <div class="button-wrap">
+              <button class="sharing-button" type="submit">Запостить</button>
+              <button class="sharing-button" type="reset">Отмена</button>
+            </div>
+          </div>
+
+          <div class="sharing__desktop-wrap">
+            <ul class="sharing-list">
+              <li class="sharing-list__item sharing-list__item--cut">
+                <button type="button"></button>
+                <div class="sharing-range">
+                  <div class="sharing-range__scale"></div>
+                  <div class="sharing-range__toggle"></div>
+                </div>
+                <div class="crossline"></div>
+              </li>
+              <li class="sharing-list__item sharing-list__item--fill">
+                <button type="button"></button>
+                <div class="sharing-range">
+                  <div class="sharing-range__scale"></div>
+                  <div class="sharing-range__toggle"></div>
+                </div>
+                <div class="crossline"></div>
+              </li>
+              <li class="sharing-list__item sharing-list__item--bright">
+                <button type="button"></button>
+                <div class="sharing-range">
+                  <div class="sharing-range__scale"></div>
+                  <div class="sharing-range__toggle"></div>
+                </div>
+                <div class="crossline"></div>
+              </li>
+            </ul>
+            <div class="button-wrap">
+              <button class="sharing-button" type="submit">Запостить</button>
+              <button class="sharing-button" type="reset">Отмена</button>
+            </div>
+          </div>
+
         </div>
       </form>
     </main>
 
     <footer class="page-footer">
-      <a class="footer-logo" href="index.html">
-        <img src="img/logo-pink-blue-mobile.svg" alt="логотип">
-      </a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--twiter" href="#"></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--fb" href="#"></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube" href="#"></a>
-        </li>
-      </ul>
-      <div class="footer-develop">
-        <span>Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
+      <div class="page-footer__wrap">
+        <a class="footer-logo" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" alt="логотип">
         </a>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twiter" href="#"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--fb" href="#"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--youtube" href="#"></a>
+          </li>
+        </ul>
+        <div class="footer-develop">
+          <span>Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

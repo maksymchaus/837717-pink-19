@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.panorama__image {
+  display: block;
+  margin: 0 auto;
+}
+
 .panorama__oftheday {
   display: block;
   width: 140px;
@@ -10,6 +15,7 @@
 
   position: absolute;
   left: 50%;
+  top: 0;
 
   font-size: 12px;
   line-height: 24px;
@@ -18,4 +24,11 @@
   color: #ffffff;
   text-align: center;
   padding-top: 5px;
+}
+
+@media (min-width: 660px) {
+  .panorama__oftheday {
+    left: 72%;
+    top: 11%;
+  }
 }

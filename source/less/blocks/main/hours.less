@@ -1,0 +1,33 @@
+.hours {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .hours {
+    display: block;
+  }
+
+  .hours__wrap {
+    width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+    display: flex;
+  }
+}
+
+@media (min-width: 960px) {
+  .hours {
+    background-color: @bg-main;
+  }
+
+  .hours__wrap {
+    width: 960px;
+    display: flex;
+    padding: 0 10px;
+    padding-top: 60px;
+    padding-bottom: 65px;
+    background-color: @bg-main;
+  }
+}

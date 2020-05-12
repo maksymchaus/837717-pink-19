@@ -1,5 +1,48 @@
-.page-footer {
+.page-footer__wrap {
   width: 320px;
+  margin: 0 auto;
   padding-bottom: 67px;
   padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-footer--none {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .page-footer--none {
+    display: block;
+  }
+
+  .page-footer {
+    width: auto;
+  }
+
+  .page-footer__wrap {
+    width: 660px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 40px 20px;
+  }
+}
+
+
+@media (min-width: 960px) {
+  .page-footer--none {
+    display: block;
+  }
+
+  .page-footer__wrap {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-top: 105px;
+  }
 }

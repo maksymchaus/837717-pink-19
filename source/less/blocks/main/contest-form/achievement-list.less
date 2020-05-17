@@ -34,6 +34,14 @@
   background-color: #ffffff;
 }
 
+.achievement__checkbox:hover + .achievement__label::before {
+  border: 2px solid @bg-header;
+}
+
+.achievement__checkbox:active + .achievement__label::before {
+  border: 2px solid @red;
+}
+
 .achievement__checkbox:checked + .achievement__label::after,
 .achievement__checkbox:not(:checked) + .achievement__label::after {
   content: "";
@@ -47,4 +55,29 @@
 
 .achievement__checkbox:not(:checked) + .achievement__label::after {
   background: none;
+}
+
+@media (min-width: 660px) {
+  .achievement-list__item {
+    padding: 23.5px 0;
+  }
+
+  .achievement__checkbox:checked + .achievement__label,
+  .achievement__checkbox:not(:checked) + .achievement__label {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 960px) {
+  .achievement-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+
+  .achievement-list__item {
+    width: 33.3%;
+  }
 }

@@ -35,6 +35,15 @@
   border-radius: 100%;
 }
 
+.device__radio:hover + .device__label::before {
+    border: 2px solid @bg-header;
+  }
+
+.device__radio:active + .device__label::before {
+  border: 2px solid @red;
+}
+
+
 .device__radio:checked + .device__label::after,
 .device__radio:not(:checked) + .device__label::after {
   content: "";
@@ -50,4 +59,22 @@
 
 .device__radio:not(:checked) + .device__label::after {
   opacity: 0;
+}
+
+@media (min-width: 660px) {
+  .device-list {
+    padding-bottom: 55px;
+  }
+
+  .device-list__item {
+    padding-top: 42px;
+    padding-bottom: 0;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 960px) {
+  .device-list__item {
+    padding-left: 50px;
+  }
 }

@@ -10,6 +10,14 @@
     text-align: center;
     color: #ffffff;
   }
+
+  a:hover {
+    color: @red;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 660px) {
@@ -34,6 +42,17 @@
       height: auto;
       text-align: center;
       color: #ffffff;
+    }
+
+    &--active {
+
+      a {
+        min-height: 30px;
+        border-bottom: 2px solid #ffffff;
+        }
+      a:hover {
+        border-bottom: 2px solid @red;
+      }
     }
   }
 }

@@ -17,6 +17,15 @@
   display: block;
   background: url("../img/logo-pink-white-mobile.svg") no-repeat;
   width: 80px;
+
+  &:hover {
+    background: url("../img/logo-pink-white-mobile__hover.svg") no-repeat;
+  }
+
+  &:active {
+    background: url("../img/logo-pink-white-mobile.svg") no-repeat;
+    opacity: 0.3;
+  }
 }
 
 .main-nav__toggle {
@@ -25,6 +34,17 @@
   border: none;
   background: url("../img/icon-menu-cross.svg");
   cursor: pointer;
+}
+
+.main-nav__toggle:hover,
+.main-nav__toggle:focus {
+  background: url("../img/icon-menu-cross__hover.svg");
+  outline: none;
+}
+
+.main-nav__toggle:active {
+  background: url("../img/icon-menu-cross__hover.svg");
+  opacity: 0.3;
 }
 
 .main-nav__list {
@@ -54,6 +74,15 @@
     width: 150px;
     height: 45px;
     background: url("../img/logo-pink-white-desktop.svg") no-repeat;
+
+    &:hover {
+      background: url("../img/logo-pink-white-desktop__hover.svg") no-repeat;
+    }
+
+    &:active {
+      background: url("../img/logo-pink-white-desktop.svg") no-repeat;
+      opacity: 0.3;
+    }
   }
 
   .main-nav__toggle {

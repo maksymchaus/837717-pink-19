@@ -1,16 +1,26 @@
 .footer-logo {
   display: block;
+  margin: 0 auto;
+  width: 150px;
+  min-height: 40px;
   padding-bottom: 5px;
+  margin-bottom: 15px;
+  background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
+}
 
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+.footer-logo:hover {
+  background: url("../img/logo-pink-blue-mobile__hover.svg") no-repeat;
+}
+
+.footer-logo:active {
+  background: url("../img/logo-pink-blue-mobile__hover.svg") no-repeat;
+  opacity: 0.3;
 }
 
 @media (min-width: 660px) {
   .footer-logo {
     padding: 0;
+    margin: 0;
   }
 }
 
@@ -18,5 +28,15 @@
 @media (min-width: 960px) {
   .footer-logo {
     padding: 0;
+    margin: 0;
+    background: url("../img/logo-pink-blue-desktop.svg") no-repeat;
+  }
+
+  .footer-logo:hover {
+    background: url("../img/logo-pink-blue-desktop__hover.svg") no-repeat;
+  }
+
+  .footer-logo:active {
+    background: url("../img/logo-pink-blue-desktop__hover.svg") no-repeat;
   }
 }

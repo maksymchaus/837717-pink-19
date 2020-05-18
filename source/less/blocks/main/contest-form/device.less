@@ -1,7 +1,7 @@
 .device {
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   background-color: @bg-main;
 }
 
@@ -22,4 +22,33 @@
   padding-bottom: 20px;
   padding-top: 40px;
   background-color: @bg-main;
+}
+
+@media (min-width: 660px) {
+  .device {
+    background-color:#ffffff;
+    order: 2;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
+  .device__wrap {
+    width: 620px;
+  }
+
+  .device__legend {
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+
+  .device fieldset {
+    border: 2.0px solid #e5e5e5;
+  }
+}
+
+@media (min-width: 960px) {
+  .device__wrap {
+    width: 435px;
+  }
 }

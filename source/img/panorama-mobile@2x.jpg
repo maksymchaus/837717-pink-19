@@ -1,0 +1,32 @@
+.user-comment {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 45px;
+
+  label {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: @red;
+
+    display: block;
+    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+
+  textarea {
+    padding: 15px;
+    border: 2px solid #e5e5e5;
+    width: 280px;
+    height: 200px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @bg-header;
+  }
+}

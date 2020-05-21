@@ -1,0 +1,21 @@
+.crossline {
+  width: auto;
+  height: 1px;
+  background-color: #dddee0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 660px) {
+  .crossline {
+    width: 275px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 960px) {
+  .crossline {
+    width: 410px;
+    margin-bottom: 0;
+  }
+}

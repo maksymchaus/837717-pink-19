@@ -1,0 +1,39 @@
+.site-list__item {
+  .font-nav ();
+  border-bottom: 1px solid #000000;
+  min-height: 64px;
+  padding-top: 15px;
+
+  a {
+    display: block;
+    min-height: 48px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 660px) {
+  .site-list__item a {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .site-list__item {
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+    box-shadow: none;
+
+    min-height: auto;
+    padding-top: 20px;
+
+    a {
+      display: block;
+      width: auto;
+      height: auto;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}

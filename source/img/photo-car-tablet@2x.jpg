@@ -1,0 +1,106 @@
+.sharing-list {
+  width: 240px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 35px;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sharing-list__item {
+  width: 50px;
+  height: 50px;
+  list-style: none;
+
+  & button {
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    outline: none;
+    opacity: 0.3;
+    background-color: @bg-main;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &--cut button {
+    background-image: url("../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--fill button {
+    background-image: url("../img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--bright button {
+    background-image: url("../img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: 660px) {
+  .sharing-list {
+    width: 275px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  .sharing-list__item {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    & button {
+      width: 22px;
+      height: 22px;
+      opacity: 1;
+      padding: 0;
+      background-size: 100%;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .sharing-list {
+    width: 415px;
+    margin-right: 35px;
+    padding-top: 5px;
+  }
+
+  .sharing-list__item {
+
+    & button {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .sharing-list__item--bright {
+
+    button {
+      width: 35px;
+      height: 35px;
+      margin: 5px;
+    }
+  }
+}

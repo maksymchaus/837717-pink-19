@@ -12,7 +12,13 @@
       <nav class="main-nav">
         <div class="main-nav__container">
           <div class="main-nav__top">
-            <a class="main-nav__logo" href="index.html"></a>
+            <a class="main-nav__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" alt="логотип Пинк">
+              </picture>
+            </a>
             <button class="main-nav__toggle" type="button"></button>
           </div>
           <ul class="main-nav__list site-list">
@@ -51,11 +57,11 @@
           <ul class="name-list">
             <li class="name-list__item">
               <label for="user-surname">Фамилия:</label>
-              <input type="text" name="surname" placeholder="Укажите фамилию *" id="user-surname" required>
+              <input type="text" name="surname" placeholder="Укажите фамилию *" id="user-surname" required="">
             </li>
             <li class="name-list__item">
               <label for="user-name">Имя:</label>
-              <input type="text" name="name" placeholder="Введите ваше имя *" id="user-name" required>
+              <input type="text" name="name" placeholder="Введите ваше имя *" id="user-name" required="">
             </li>
             <li class="name-list__item">
               <label for="user-fathername">Отчество:</label>
@@ -72,11 +78,11 @@
             </legend>
             <ul class="achievement-list">
               <li class="achievement-list__item">
-                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="selfie" id="achievement-selfie" checked>
+                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="selfie" id="achievement-selfie" checked="">
                 <label class="achievement__label" for="achievement-selfie">Сделал селфи с акулой</label>
               </li>
               <li class="achievement-list__item">
-                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="baked" id="achievement-baked" checked>
+                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="baked" id="achievement-baked" checked="">
                 <label class="achievement__label" for="achievement-baked">Обгорел на пляже</label>
               </li>
               <li class="achievement-list__item">
@@ -88,7 +94,7 @@
                 <label class="achievement__label" for="achievement-souvenir">Накупил сувениров</label>
               </li>
               <li class="achievement-list__item">
-                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="keeptower" id="achievement-keeptower" checked>
+                <input class="achievement__checkbox visually-hidden" type="checkbox" name="achievement" value="keeptower" id="achievement-keeptower" checked="">
                 <label class="achievement__label" for="achievement-keeptower">Удержал башню</label>
               </li>
               <li class="achievement-list__item">
@@ -96,8 +102,8 @@
                 <label class="achievement__label" for="achievement-crashhotel">Разгромил отель</label>
               </li>
             </ul>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
         <fieldset class="user-contact">
           <legend class="user-contact__legend">
@@ -114,7 +120,7 @@
             <li class="user-contact__item">
               <label for="user-email">Адрес почты</label>
               <div class="user-contact__wrapper">
-                <input type="email" name="user-email" placeholder="Введите почту *" id="user-email" required>
+                <input type="email" name="user-email" placeholder="Введите почту *" id="user-email" required="">
                 <div class="user-contact__icon user-contact__icon--mail"></div>
               </div>
             </li>
@@ -126,7 +132,7 @@
             <legend class="device__legend">С каким приложением путешествовали?</legend>
             <ul class="device-list">
               <li class="device-list__item">
-                <input class="device__radio visually-hidden" type="radio" id="device-ios" name="device" value="iOS" checked>
+                <input class="device__radio visually-hidden" type="radio" id="device-ios" name="device" value="iOS" checked="">
                 <label class="device__label" for="device-ios">Pink для iOS</label>
               </li>
               <li class="device-list__item">
@@ -157,7 +163,12 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrap">
-        <a class="footer-logo" href="index.html"></a>
+        <a class="footer-logo" href="index.html">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="логотип Пинк">
+          </picture>
+        </a>
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--twiter" href="#"></a>

@@ -11,7 +11,13 @@
       <nav class="main-nav">
          <div class="main-nav__container">
           <div class="main-nav__top">
-            <a class="main-nav__logo"></a>
+            <a class="main-nav__logo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" alt="логотип Пинк">
+              </picture>
+            </a>
             <button class="main-nav__toggle" type="button"></button>
           </div>
           <ul class="main-nav__list site-list">
@@ -279,7 +285,12 @@
 
     <footer class="page-footer page-footer--none">
       <div class="page-footer__wrap">
-        <a class="footer-logo" href="index.html"></a>
+        <a class="footer-logo">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="логотип Пинк">
+          </picture>
+        </a>
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--twiter" href="#"></a>

@@ -50,10 +50,6 @@ gulp.task("refresh",function  (done) {
   done();
 });
 
-gulp.task("start", gulp.series("build","server"));
-
-gulp.task("start", gulp.series("css", "server"));
-
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([

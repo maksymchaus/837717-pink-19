@@ -1,8 +1,16 @@
 .price {
   background: url("../img/shape_bg-2_copy_2861.png") no-repeat;
-  background-size: 100%;
-  padding-bottom: 50px;
-  margin-top: 130px;
+  background-size: cover;
+  padding-bottom: 45px;
+  padding-top: 100px;
+  margin-top: 30px;
+}
+
+.price__slider-wrapper {
+  min-width: 320px;
+  max-width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 @media (min-width: 660px) {
@@ -12,17 +20,21 @@
     margin: 0 auto;
     margin-top: 15px;
     padding-top: 90px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 }
 
 @media (min-width: 960px) {
   .price {
     background: url("../img/shape_2_desktop_copy.png") no-repeat;
-    background-size: 100%;
+    background-size: cover;
     margin: 0 auto;
     margin-top: 0;
     padding-top: 155px;
     padding-bottom: 75px;
+  }
+
+  .price__slider-wrapper {
+    padding: 0 10px;
   }
 }

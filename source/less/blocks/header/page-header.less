@@ -11,6 +11,13 @@
   .page-header--form {
     padding-bottom: 78px;
   }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .page-header {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
+    }
+  }
 }
 
 @media (min-width: 960px) {
@@ -23,5 +30,12 @@
   .page-header--form {
     min-height: 390px;
     padding-bottom: 0;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .page-header {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
+    }
   }
 }

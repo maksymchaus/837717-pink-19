@@ -1,4 +1,4 @@
-.button-wrap {
+.sharing-button {
   width: 280px;
   min-height: 120px;
   margin: 0 auto;
@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 
-.sharing-button {
+.sharing-button__item {
   width: 280px;
   padding: 16px 0;
 
@@ -23,7 +23,7 @@
   color: #d22856;
 }
 
-.sharing-button--cancel {
+.sharing-button__item--cancel {
   opacity: 0.1;
 
   &:hover {
@@ -36,12 +36,12 @@
   }
 }
 
-.sharing-button--upload {
-
+.sharing-button__item--upload {
   &:hover {
     background-color: @red;
     color: #ffffff;
   }
+
   &:active {
     background-color: @red;
     color: #de6384;
@@ -49,24 +49,24 @@
 }
 
 @media (min-width: 660px) {
-  .button-wrap {
-    width: 260px;
+  .sharing-button {
+    width: 275px;
     min-height: 140px;
   }
 
-  .sharing-button {
+  .sharing-button__item {
     width: 260px;
   }
 }
 
 @media (min-width: 960px) {
-  .button-wrap {
+  .sharing-button {
     width: 410px;
     min-height: 55px;
     flex-direction: row;
   }
 
-  .sharing-button {
+  .sharing-button__item {
     width: 185px;
   }
 }

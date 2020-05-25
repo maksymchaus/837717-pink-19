@@ -75,6 +75,15 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("spritelogo", function () {
+  return gulp.src("source/img/logo-pink-white-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("spritelogo.svg"))
+    .pipe(gulp.dest("build/img"));
+});
+
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
@@ -104,6 +113,7 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
+  "spritelogo",
   "html"
 ));
 

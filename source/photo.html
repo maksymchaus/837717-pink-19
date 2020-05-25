@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy:Pink</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
 
   <body>
@@ -13,15 +17,19 @@
         <div class="main-nav__container">
           <div class="main-nav__top">
             <a class="main-nav__logo" href="index.html">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img src="img/logo-pink-white-mobile.svg" alt="логотип Пинк">
-              </picture>
+              <svg class="main-nav__logo-image main-nav__logo-image--mobile" width="75" height="22" aria-hidden="true">
+                <use xlink:href="img/spritelogo.svg#logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="main-nav__logo-image main-nav__logo-image--tablet" width="147" height="40" aria-hidden="true">
+                <use xlink:href="img/spritelogo.svg#logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="main-nav__logo-image main-nav__logo-image--desktop" width="147" height="40" aria-hidden="true">
+                <use xlink:href="img/spritelogo.svg#logo-pink-white-desktop"></use>
+              </svg>
             </a>
-            <button class="main-nav__toggle" type="button"></button>
+            <button class="main-nav__toggle main-nav__toggle--cross" type="button"></button><!--при нажатии включаеться class="main-nav__togle-burger"-->
           </div>
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list"><!--при нажатии на main-nav__toggle включаеться class="main-nav__list-hide-->
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
@@ -48,7 +56,7 @@
         выкладывают пользователи!
         Видите, как не хватает ваших?
       </p>
-      <div class="panorama">
+      <a href="img/panorama-desktop@1x.jpg" class="panorama">
         <picture>
           <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x,
                   img/panorama-desktop@2x.jpg 2x">
@@ -57,7 +65,7 @@
           <img class="panorama__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="фото">
         </picture>
         <span class="panorama__oftheday">панорама дня</span>
-      </div>
+      </a>
       <div class="panorama-wrap">
         <div class="panorama-wrap__name-wrap">
           <span class="panorama-wrap__comment-name">Анна</span>
@@ -78,7 +86,7 @@
       </div>
       <ul class="userphotos-list">
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo">
+          <a href="img/photo-car-desktop@1x.jpg" class="userphotos-list__photo">
             <picture>
               <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x,
                       img/photo-car-desktop@2x.jpg 2x">
@@ -87,7 +95,7 @@
 
               <img class="userphotos-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фото">
             </picture>
-          </div>
+          </a>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Левон</span>
@@ -105,7 +113,7 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo">
+          <a href="img/photo-drumset-desktop@1x.jpg" class="userphotos-list__photo">
             <picture>
               <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x,
                       img/photo-drumset-desktop@2x.jpg 2x">
@@ -113,7 +121,7 @@
                       img/photo-drumset-tablet@2x.jpg 2x">
               <img class="userphotos-list__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фото">
             </picture>
-          </div>
+          </a>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Антон</span>
@@ -130,7 +138,7 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo">
+          <a href="img/photo-window-desktop@1x.jpg" class="userphotos-list__photo">
             <picture>
               <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x,
                       img/photo-window-desktop@2x.jpg 2x">
@@ -138,7 +146,7 @@
                       img/photo-window-tablet@2x.jpg 2x">
               <img class="userphotos-list__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фото">
             </picture>
-          </div>
+          </a>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Борис</span>
@@ -156,7 +164,7 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo">
+          <a href="img/photo-fair-desktop@1x.jpg" class="userphotos-list__photo">
             <picture>
               <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x,
                       img/photo-fair-desktop@2x.jpg 2x">
@@ -164,7 +172,7 @@
                       img/photo-fair-tablet@2x.jpg 2x">
               <img class="userphotos-list__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фото">
             </picture>
-          </div>
+          </a>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Сергей</span>
@@ -181,7 +189,7 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo">
+          <a href="img/photo-pov-desktop@1x.jpg" class="userphotos-list__photo">
             <picture>
               <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x,
                       img/photo-pov-desktop@2x.jpg 2x">
@@ -189,7 +197,7 @@
                       img/photo-pov-tablet@2x.jpg 2x">
               <img class="userphotos-list__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фото">
             </picture>
-          </div>
+          </a>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Максим</span>
@@ -206,7 +214,7 @@
           </div>
         </li>
         <li class="userphotos-list__item">
-          <div class="userphotos-list__photo">
+          <a href="img/photo-wing-desktop@1x.jpg" class="userphotos-list__photo">
             <picture>
               <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x,
                       img/photo-wing-desktop@2x.jpg 2x">
@@ -214,7 +222,7 @@
                       img/photo-wing-tablet@2x.jpg 2x">
               <img class="userphotos-list__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фото">
             </picture>
-          </div>
+          </a>
           <div class="userphotos-list__wrap">
             <p class="userphotos-list__comment">
               <span class="userphotos-list__comment-name">Надежда</span>
@@ -240,13 +248,15 @@
 
       <form class="sharing" action="https://echo.htmlacademy.ru" method="POST">
         <div class="sharing__content">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x,
-                    img/photo-road-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x,
-                    img/photo-road-tablet@2x.jpg 2x">
-            <img class="sharing__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 2x" alt="фото">
-          </picture>
+          <a class="sharing__image-wrap" href="img/photo-road-desktop@1x.jpg">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x,
+                      img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x,
+                      img/photo-road-tablet@2x.jpg 2x">
+              <img class="sharing__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 2x" alt="фото">
+            </picture>
+          </a>
           <div class="sharing__wrap">
             <ul class="sharing-list">
               <li class="sharing-list__item sharing-list__item--cut">
@@ -264,9 +274,9 @@
               <div class="sharing-range__toggle"></div>
             </div>
             <div class="crossline"></div>
-            <div class="button-wrap">
-              <button class="sharing-button sharing-button--upload" type="submit">Запостить</button>
-              <button class="sharing-button sharing-button--cancel" type="reset">Отмена</button>
+            <div class="sharing-button">
+              <button class="sharing-button__item sharing-button__item--upload" type="submit">Запостить</button>
+              <button class="sharing-button__item sharing-button__item--cancel" type="reset">Отмена</button>
             </div>
           </div>
 
@@ -297,9 +307,9 @@
                 <div class="crossline"></div>
               </li>
             </ul>
-            <div class="button-wrap">
-              <button class="sharing-button sharing-button--upload" type="submit">Запостить</button>
-              <button class="sharing-button sharing-button--cancel" type="reset">Отмена</button>
+            <div class="sharing-button">
+              <button class="sharing-button__item sharing-button__item--upload" type="submit">Запостить</button>
+              <button class="sharing-button__item sharing-button__item--cancel" type="reset">Отмена</button>
             </div>
           </div>
 

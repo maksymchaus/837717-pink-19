@@ -1,20 +1,57 @@
 .contacts {
   background: url("../img/bg-map-mobile@1x.png") no-repeat;
   background-size: 100%;
-  min-height: 620px;
+  overflow: hidden;
+  padding-bottom: 620px;
+  position: relative;
+  height: 0;
+}
+
+.contacts iframe {
+  left: 0;
+  top: 300px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .contacts__triangle-bg {
   background: url("../img/bg-triangle-white-footer.svg") 50% 50% no-repeat;
-  background-size: 100%;
-  min-height: 10vw;
+  background-size: cover;
+  left: 0;
+  bottom: -55px;
+  min-height: 70px;
+  width: 100%;
+  position: absolute;
+}
+
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .contacts {
+    background: url("../img/bg-map-mobile@2x.png") no-repeat;
+  }
 }
 
 @media (min-width: 660px) {
   .contacts {
-    background: url("../../../../img/bg-map-tablet@1x.jpg") no-repeat;
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat;
     background-size: 100%;
-    min-height: 775px;
+    overflow: hidden;
+    padding-bottom: 775px;
+    position: relative;
+    height: 0;
+  }
+
+  .contacts__triangle-bg {
+    bottom: -100px;
+    min-height: 100px;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .contacts {
+      background: url("../img/bg-map-tablet@2x.jpg") no-repeat;
+    }
   }
 }
 
@@ -22,6 +59,18 @@
   .contacts {
     background: url("../img/bg-map-desktop@1x.jpg") no-repeat;
     background-size: 100%;
-    min-height: 870px;
+    padding-bottom: 870px;
+  }
+
+  .contacts__triangle-bg {
+    bottom: -140px;
+    min-height: 140px;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .contacts {
+      background: url("../img/bg-map-desktop@2x.jpg") no-repeat;
+    }
   }
 }

@@ -9,18 +9,22 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-         <div class="main-nav__container">
+        <div class="main-nav__container">
           <div class="main-nav__top">
             <a class="main-nav__logo">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img src="img/logo-pink-white-mobile.svg" alt="логотип Пинк">
-              </picture>
+              <svg class="main-nav__logo-image main-nav__logo-image--mobile" width="75" height="22" aria-hidden="true">
+                <use xlink:href="img/spritelogo.svg#logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="main-nav__logo-image main-nav__logo-image--tablet" width="147" height="40" aria-hidden="true">
+                <use xlink:href="img/spritelogo.svg#logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="main-nav__logo-image main-nav__logo-image--desktop" width="147" height="40" aria-hidden="true">
+                <use xlink:href="img/spritelogo.svg#logo-pink-white-desktop"></use>
+              </svg>
             </a>
-            <button class="main-nav__toggle" type="button"></button>
+            <button class="main-nav__toggle main-nav__toggle--cross" type="button"></button><!--при нажатии включаеться class="main-nav__togle-burger"-->
           </div>
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list"><!--при нажатии на main-nav__toggle включаеться class="main-nav__list-hide-->
             <li class="site-list__item site-list__item--active">
               <a>Главная</a>
             </li>
@@ -155,9 +159,9 @@
 
       <section class="price">
         <h2 class="visually-hidden">Тарифы</h2>
-        <div class="price-slider">
+        <div class="price-slider price__slider-wrapper">
 
-          <table class="price-table">
+          <table class="price-table price__table">
             <tr class="price-table__row">
               <th class="price-table__first-header">
               </th>
@@ -257,29 +261,29 @@
       </section>
 
       <section class="contacts">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5422457719308!2d30.32025790127764!3d59.93973759324036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sdk!4v1590330746033!5m2!1sru!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-map">
-            <p class="contacts-map__text">
-              Остались вопросы?
-              Свяжитесь с нами!
+          <p class="contacts-map__text">
+            Остались вопросы?
+            Свяжитесь с нами!
+          </p>
+          <div class="contacts-data">
+            <p class="contacts-data__block">
+              <span class="contacts-data__text">Звоните:</span>
+              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
             </p>
-            <div class="contacts-data">
-              <p class="contacts-data__block">
-                <span class="contacts-data__text">Звоните:</span>
-                <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-              </p>
-              <p class="contacts-data__block contacts-data__block--order">
-                <span class="contacts-data__text">Пишите:</span>
-                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </p>
-              <p class="contacts-data__block">
-                <span class="contacts-data__text">Приезжайте в гости:</span>
-                <a>ул. Большая Конюшенная, 19/8</a>
-              </p>
-            </div>
-            <div class="contacts-map__pin"></div>
+            <p class="contacts-data__block contacts-data__block--order">
+              <span class="contacts-data__text">Пишите:</span>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="contacts-data__block">
+              <span class="contacts-data__text">Приезжайте в гости:</span>
+              <a>ул. Большая Конюшенная, 19/8</a>
+            </p>
+          </div>
+          <div class="contacts__triangle-bg"></div>
         </div>
-        <div class="contacts__triangle-bg"></div>
       </section>
     </main>
 

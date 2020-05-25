@@ -19,14 +19,64 @@
   text-align: center;
   color: @red;
 
+  padding: 0 20px;
   padding-bottom: 20px;
   padding-top: 40px;
+  margin: 0 auto;
   background-color: @bg-main;
+}
+
+.device__radio:checked + .device__label,
+.device__radio:not(:checked) + .device__label {
+  display: inline-block;
+  position: relative;
+  padding-left: 70px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.device__radio:checked + .device__label::before,
+.device__radio:not(:checked) + .device__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.device__radio:hover + .device__label::before {
+  border: 2px solid @bg-header;
+}
+
+.device__radio:active + .device__label::before {
+  border: 2px solid @red;
+}
+
+
+.device__radio:checked + .device__label::after,
+.device__radio:not(:checked) + .device__label::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  width: 15px;
+  height: 15px;
+  background-color: @red;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.device__radio:not(:checked) + .device__label::after {
+  opacity: 0;
 }
 
 @media (min-width: 660px) {
   .device {
-    background-color:#ffffff;
+    background-color: #ffffff;
     order: 2;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -39,16 +89,21 @@
   .device__legend {
     background-color: #ffffff;
     padding-top: 5px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .device fieldset {
-    border: 2.0px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
   }
 }
 
 @media (min-width: 960px) {
   .device__wrap {
     width: 435px;
+  }
+
+  .device__radio:checked + .device__label,
+  .device__radio:not(:checked) + .device__label {
+    padding-left: 62px;
   }
 }

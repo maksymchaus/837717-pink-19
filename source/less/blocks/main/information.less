@@ -16,6 +16,15 @@
   display: none;
 }
 
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .information__bg-image {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: cover;
+  }
+}
+
+
 @media (min-width: 660px) {
   .information {
     background: url("../img/shape_bg-2-tablet.png") no-repeat;
@@ -39,6 +48,14 @@
     min-height: 480px;
     margin: 0 auto;
     margin-top: 10px;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .information__bg-image {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: cover;
+    }
   }
 }
 
@@ -92,5 +109,23 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .information__bg-image--item1 {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: cover;
+    }
+
+    .information__bg-image--item2 {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: cover;
+    }
+
+    .information__bg-image--item3 {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: cover;
+    }
   }
 }

@@ -24,6 +24,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -110,6 +111,7 @@ gulp.task("clean", function () {
 
 gulp.task("build", gulp.series(
   "clean",
+  "webp",
   "copy",
   "css",
   "sprite",
